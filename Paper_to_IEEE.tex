@@ -1,0 +1,25 @@
+\documentclass[12pt,draftclsnofoot,onecolumn]{IEEEtran}
+\usepackage[top=20mm, bottom=20mm, left=20mm, right=20mm]{geometry}
+\begin{document}
+\title{Aiding Software Root Cause Analysis with Large Language Models 
+\newline
+\Large - Evaluation of the Effectiveness of Fine-tuned T5, GPT, and RAG in the handling Customer Fault Reports}
+\author{
+    Shijun Feng\\
+    Ericsson AB, Sweden\\
+    \texttt{shijun.feng@ericsson.com}}
+
+\maketitle
+\begin{abstract}
+Software systems generate a substantial number of fault reports during pre-deployment customer testing, making manual root cause analysis (RCA) both time-consuming and error-prone. This study explores the use of large language models (LLMs)—specifically T5, GPT-2, and a retrieval-augmented generation (RAG) model—to automate and enhance the RCA process in a domain-specific software engineering setting. Using a curated dataset of real-world fault descriptions and resolutions, the models were fine-tuned and evaluated using BLEU-4, ROUGE, and BERT-based semantic similarity metrics. Results indicate that T5 outperforms GPT-2 in lexical and structural fidelity (e.g., BLEU-4: 0.1810 vs. 0.1210), while RAG achieves the highest semantic similarity (BERT score: 0.7715). These findings suggest that combining T5’s precision in technical phrasing with RAG’s contextual understanding may offer a promising direction for developing intelligent RCA assistance tools that improve both accuracy and relevance in software fault diagnosis. Future work will focus on hybrid model optimization and user-centered system integration for real-world engineering workflows.
+\end{abstract} 
+\section{Introduction}
+\subsection*{Background}
+\begin{itemize}
+    \item First item
+    \item Second item
+    \item Third item
+    \item Forth item 
+    \item Fifth item
+\end{itemize}
+\end{document}
