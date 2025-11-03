@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.3 $
+% $ biblatex bbl format version 3.2 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -18,63 +18,98 @@
 
 
 \refsection{0}
-  \datalist[entry]{none/global//global/global/global}
-    \entry{zhang2020ai}{article}{}{}
-      \name{author}{2}{}{%
-        {{hash=25bbf4047d900f3760c65b01ee899dba}{%
-           family={Zhang},
-           familyi={Z\bibinitperiod},
-           given={Wei},
-           giveni={W\bibinitperiod}}}%
-        {{hash=17e889465f015f567550ebf95e2ff125}{%
-           family={Chen},
-           familyi={C\bibinitperiod},
-           given={Lin},
+  \datalist[entry]{none/global//global/global}
+    \entry{10979844}{article}{}
+      \name{author}{6}{}{%
+        {{hash=7a589cb235ccad647e15a4e4233eea95}{%
+           family={Pedroso},
+           familyi={P\bibinitperiod},
+           given={Diego\bibnamedelima Frazatto},
+           giveni={D\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=4e08ad0f12fcc1bd60ddd68c08f76504}{%
+           family={Almeida},
+           familyi={A\bibinitperiod},
+           given={Luís},
            giveni={L\bibinitperiod}}}%
+        {{hash=4ad1378b7c7712a0ea80b8cf26ac29fe}{%
+           family={Pulcinelli},
+           familyi={P\bibinitperiod},
+           given={Lucas\bibnamedelimb Eduardo\bibnamedelima Gulka},
+           giveni={L\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=2edeefaabaf16f57a7fd93eb9bdf9cca}{%
+           family={Aisawa},
+           familyi={A\bibinitperiod},
+           given={William\bibnamedelimb Akihiro\bibnamedelima Alves},
+           giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=dfd45f5b693c135bcb7431f928972c64}{%
+           family={Dutra},
+           familyi={D\bibinitperiod},
+           given={Inês},
+           giveni={I\bibinitperiod}}}%
+        {{hash=c02b1f6443f5050ac390e3fb94db5fe8}{%
+           family={Bruschi},
+           familyi={B\bibinitperiod},
+           given={Sarita\bibnamedelima Mazzini},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
       }
-      \strng{namehash}{9ec0e8becde16df7af69e44791433edf}
-      \strng{fullhash}{9ec0e8becde16df7af69e44791433edf}
-      \strng{fullhashraw}{9ec0e8becde16df7af69e44791433edf}
-      \strng{bibnamehash}{9ec0e8becde16df7af69e44791433edf}
-      \strng{authorbibnamehash}{9ec0e8becde16df7af69e44791433edf}
-      \strng{authornamehash}{9ec0e8becde16df7af69e44791433edf}
-      \strng{authorfullhash}{9ec0e8becde16df7af69e44791433edf}
-      \strng{authorfullhashraw}{9ec0e8becde16df7af69e44791433edf}
+      \strng{namehash}{566f0c46550e7f48c71a7d3339e27162}
+      \strng{fullhash}{aa1046e9c5866e890d8e995bf7d6c845}
+      \strng{bibnamehash}{aa1046e9c5866e890d8e995bf7d6c845}
+      \strng{authorbibnamehash}{aa1046e9c5866e890d8e995bf7d6c845}
+      \strng{authornamehash}{566f0c46550e7f48c71a7d3339e27162}
+      \strng{authorfullhash}{aa1046e9c5866e890d8e995bf7d6c845}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{IEEE Transactions on Intelligent Vehicles}
-      \field{number}{3}
-      \field{title}{AI Applications in Commercial Vehicle Control}
-      \field{volume}{5}
-      \field{year}{2020}
-      \field{pages}{450\bibrangedash 460}
-      \range{pages}{11}
+      \field{journaltitle}{IEEE Access}
+      \field{title}{Anomaly Detection and Root Cause Analysis in Cloud-Native Environments Using Large Language Models and Bayesian Networks}
+      \field{volume}{13}
+      \field{year}{2025}
+      \field{pages}{77550\bibrangedash 77564}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1109/ACCESS.2025.3565220
+      \endverb
+      \keyw{Anomaly detection;Cloud computing;Monitoring;Microservice architectures;Large language models;Ecosystems;Computer architecture;Bayes methods;Scalability;Load modeling;Automated root cause analysis;Bayesian networks;LLM;cloud computing}
     \endentry
-    \entry{miller2023fault}{misc}{}{}
-      \name{author}{1}{}{%
-        {{hash=32c8c5553ef956ab8a09231d5d2193ba}{%
-           family={Miller},
-           familyi={M\bibinitperiod},
-           given={David},
-           giveni={D\bibinitperiod}}}%
+    \entry{10684586}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=085e50cf837aa8b646557185eac23501}{%
+           family={Afshinpour},
+           familyi={A\bibinitperiod},
+           given={Bahareh},
+           giveni={B\bibinitperiod}}}%
+        {{hash=e92378083f8ca263e2ad9268274f0c1b}{%
+           family={Amini},
+           familyi={A\bibinitperiod},
+           given={Massih-Reza},
+           giveni={M\bibinithyphendelim R\bibinitperiod}}}%
+        {{hash=46eee74b1178ccb0f72f06c4e2cb9b1e}{%
+           family={Groz},
+           familyi={G\bibinitperiod},
+           given={Roland},
+           giveni={R\bibinitperiod}}}%
       }
-      \strng{namehash}{32c8c5553ef956ab8a09231d5d2193ba}
-      \strng{fullhash}{32c8c5553ef956ab8a09231d5d2193ba}
-      \strng{fullhashraw}{32c8c5553ef956ab8a09231d5d2193ba}
-      \strng{bibnamehash}{32c8c5553ef956ab8a09231d5d2193ba}
-      \strng{authorbibnamehash}{32c8c5553ef956ab8a09231d5d2193ba}
-      \strng{authornamehash}{32c8c5553ef956ab8a09231d5d2193ba}
-      \strng{authorfullhash}{32c8c5553ef956ab8a09231d5d2193ba}
-      \strng{authorfullhashraw}{32c8c5553ef956ab8a09231d5d2193ba}
+      \strng{namehash}{7472275cefffd87e88fa752f259d537f}
+      \strng{fullhash}{7472275cefffd87e88fa752f259d537f}
+      \strng{bibnamehash}{7472275cefffd87e88fa752f259d537f}
+      \strng{authorbibnamehash}{7472275cefffd87e88fa752f259d537f}
+      \strng{authornamehash}{7472275cefffd87e88fa752f259d537f}
+      \strng{authorfullhash}{7472275cefffd87e88fa752f259d537f}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{howpublished}{\url{https://arxiv.org/abs/2301.01234}}
-      \field{title}{Fault Detection in Reinforcement Learning Systems}
-      \field{year}{2023}
+      \field{booktitle}{2024 IEEE 24th International Conference on Software Quality, Reliability and Security (QRS)}
+      \field{title}{Semantic Log Partitioning: Towards Automated Root Cause Analysis}
+      \field{year}{2024}
+      \field{pages}{639\bibrangedash 648}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/QRS62785.2024.00069
+      \endverb
+      \keyw{Software testing;Performance evaluation;Root cause analysis;Runtime;Event detection;Semantics;Software quality;Automated software testing;Log analysis;Machine learning;Log mining task;Root-cause events detection}
     \endentry
   \enddatalist
 \endrefsection

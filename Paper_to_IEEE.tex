@@ -1,11 +1,10 @@
-\documentclass[12pt,draftclsnofoot,onecolumn]{IEEEtran}
+\documentclass[12pt,draftclsnofoot,onecolumn, journal]{IEEEtran}
 \usepackage[top=20mm, bottom=20mm, left=20mm, right=20mm]{geometry}
 \usepackage[backend=biber,style=ieee,sorting=none]{biblatex}
 \usepackage{url}
 \usepackage{graphicx}
 
 \addbibresource{references.bib}
-\printbibliography
 
 
 \begin{document}
@@ -34,8 +33,16 @@ XYZ Institute\\
 Software systems generate a substantial number of fault reports during pre-deployment customer testing, making manual root cause analysis (RCA) both time-consuming and error-prone. This study explores the use of large language models (LLMs)—specifically T5, GPT-2, and a retrieval-augmented generation (RAG) model—to automate and enhance the RCA process in a domain-specific software engineering setting. Using a curated dataset of real-world fault descriptions and resolutions, the models were fine-tuned and evaluated using BLEU-4, ROUGE, and BERT-based semantic similarity metrics. Results indicate that T5 outperforms GPT-2 in lexical and structural fidelity (e.g., BLEU-4: 0.1810 vs. 0.1210), while RAG achieves the highest semantic similarity (BERT score: 0.7715). These findings suggest that combining T5’s precision in technical phrasing with RAG’s contextual understanding may offer a promising direction for developing intelligent RCA assistance tools that improve both accuracy and relevance in software fault diagnosis. Future work will focus on hybrid model optimization and user-centered system integration for real-world engineering workflows.
 \end{abstract} 
 \section{Introduction}
-Artificial intelligence has been increasingly applied in vehicle systems~\cite{zhang2020ai}.  
-Recent research also highlights the role of reinforcement learning in fault detection~\cite{miller2023fault}.
+As software companies deploy their solutions into operators’ networks, various issues inevitably arise during testing and operational use. Operators routinely report faults, many of which exhibit similar symptoms across different network environments. Efficiently processing, categorizing, and addressing these trouble reports is crucial to maintaining software reliability and customer satisfaction. However, the current handling of fault reports remains largely manual, requiring developers to invest substantial time and effort in reviewing, classifying, and resolving reported issues.  
+
+A particularly time-consuming challenge is the management of duplicate fault reports. Even when multiple operators report identical or highly similar issues due to cloud native environment complexity, Diego et al.\cite{10979844} focuses on Anomaly Detection and Root Cause Analysis in Cloud native environments using LLM and Bayesian networks, still, developers must manually verify each case, determine whether it corresponds to an existing problem, link it to previously resolved faults, or classify it as a novel issue requiring investigation. This repetitive, experience-driven process not only slows down response times but also increases the risk of inconsistent handling, leading to operational inefficiencies. Furthermore, the lack of automation in identifying and clustering similar reports often results in redundant work, extending resolution times unnecessarily.  
+
+The impact of this inefficiency extends beyond internal development workflows. Mishandling or delayed processing of fault reports can lead to software performance degradation, operational instability, and escalations from dissatisfied customers. In cases where critical faults remain unresolved due to oversight, operators may experience network disruptions, directly affecting service quality. These challenges highlight the urgent need for a more structured and intelligent approach to fault report analysis.  
+
+Currently, despite the structured process in place, developers addressing new fault reports largely rely on their individual experience and domain expertise. This reliance introduces variability in resolution times and effectiveness, particularly when dealing with complex software faults. The absence of a systematic, data-driven approach to RCA further exacerbates the problem, as developers must repeatedly analyze logs Bahareh Afshinpour et al.\cite{10684586}, correlate system behaviors, and manually infer root causes—a process that is both labor-intensive and prone to human error.  
+
+Given these limitations, there is significant potential for leveraging AI-driven solutions, particularly large language models (LLMs), to enhance the efficiency of fault report analysis. By automating the categorization, clustering, and RCA processes, LLMs can help reduce lead times, improve diagnostic accuracy, and optimize resource allocation within software development teams.
+
 
 \subsection*{Background}
 \begin{itemize}
@@ -45,4 +52,5 @@ Recent research also highlights the role of reinforcement learning in fault dete
     \item Forth item 
     \item Fifth item
 \end{itemize}
+\printbibliography
 \end{document}

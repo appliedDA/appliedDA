@@ -1,0 +1,15 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'Paper_to_IEEE.blg'
+[41] biber-darwin:340> INFO - === Mon Nov  3, 2025, 20:22:38
+[51] Biber.pm:419> INFO - Reading 'Paper_to_IEEE.bcf'
+[98] Biber.pm:979> INFO - Found 2 citekeys in bib section 0
+[106] Biber.pm:4419> INFO - Processing section 0
+[112] Biber.pm:4610> INFO - Looking for bibtex file 'references.bib' for section 0
+[116] bibtex.pm:1713> INFO - LaTeX decoding ...
+[127] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
+[157] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[157] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[157] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[157] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[158] bbl.pm:660> INFO - Writing 'Paper_to_IEEE.bbl' with encoding 'UTF-8'
+[159] bbl.pm:763> INFO - Output to Paper_to_IEEE.bbl
