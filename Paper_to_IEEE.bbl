@@ -73,45 +73,120 @@
       \endverb
       \keyw{Anomaly detection;Cloud computing;Monitoring;Microservice architectures;Large language models;Ecosystems;Computer architecture;Bayes methods;Scalability;Load modeling;Automated root cause analysis;Bayesian networks;LLM;cloud computing}
     \endentry
-    \entry{10684586}{inproceedings}{}
-      \name{author}{3}{}{%
-        {{hash=085e50cf837aa8b646557185eac23501}{%
-           family={Afshinpour},
-           familyi={A\bibinitperiod},
-           given={Bahareh},
-           giveni={B\bibinitperiod}}}%
-        {{hash=e92378083f8ca263e2ad9268274f0c1b}{%
-           family={Amini},
-           familyi={A\bibinitperiod},
-           given={Massih-Reza},
-           giveni={M\bibinithyphendelim R\bibinitperiod}}}%
-        {{hash=46eee74b1178ccb0f72f06c4e2cb9b1e}{%
-           family={Groz},
-           familyi={G\bibinitperiod},
-           given={Roland},
-           giveni={R\bibinitperiod}}}%
+    \entry{chen2022scrnn}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=60aeb23a507616b6ae2488ddaab41f0e}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={X.},
+           giveni={X\bibinitperiod}}}%
       }
-      \strng{namehash}{7472275cefffd87e88fa752f259d537f}
-      \strng{fullhash}{7472275cefffd87e88fa752f259d537f}
-      \strng{bibnamehash}{7472275cefffd87e88fa752f259d537f}
-      \strng{authorbibnamehash}{7472275cefffd87e88fa752f259d537f}
-      \strng{authornamehash}{7472275cefffd87e88fa752f259d537f}
-      \strng{authorfullhash}{7472275cefffd87e88fa752f259d537f}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \strng{namehash}{52c9d9676745ece155d3f3f01e225c43}
+      \strng{fullhash}{52c9d9676745ece155d3f3f01e225c43}
+      \strng{bibnamehash}{52c9d9676745ece155d3f3f01e225c43}
+      \strng{authorbibnamehash}{52c9d9676745ece155d3f3f01e225c43}
+      \strng{authornamehash}{52c9d9676745ece155d3f3f01e225c43}
+      \strng{authorfullhash}{52c9d9676745ece155d3f3f01e225c43}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{2024 IEEE 24th International Conference on Software Quality, Reliability and Security (QRS)}
-      \field{title}{Semantic Log Partitioning: Towards Automated Root Cause Analysis}
+      \field{journaltitle}{Frontiers in Manufacturing Technology}
+      \field{title}{Big Data–Oriented Root Cause Identification Approach Based on PCA and SVM for Product Infant Failure}
+      \field{year}{2022}
+    \endentry
+    \entry{anomaly2021dl}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=535b46081523fc5c5dcfaba2a621d930}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{e86bfb05d7d69ee93096586b3570ad1c}
+      \strng{fullhash}{e86bfb05d7d69ee93096586b3570ad1c}
+      \strng{bibnamehash}{e86bfb05d7d69ee93096586b3570ad1c}
+      \strng{authorbibnamehash}{e86bfb05d7d69ee93096586b3570ad1c}
+      \strng{authornamehash}{e86bfb05d7d69ee93096586b3570ad1c}
+      \strng{authorfullhash}{e86bfb05d7d69ee93096586b3570ad1c}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2101.07802}
+      \field{title}{Deep Learning for Automated Anomaly Detection in Root Cause Analysis}
+      \field{year}{2021}
+    \endentry
+    \entry{kgroot2024}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=0d4a8cff3cc7aa7cf7a8e2b46e93005e}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{97aabe3bac22bc2411d4bdbbbebcfa34}
+      \strng{fullhash}{97aabe3bac22bc2411d4bdbbbebcfa34}
+      \strng{bibnamehash}{97aabe3bac22bc2411d4bdbbbebcfa34}
+      \strng{authorbibnamehash}{97aabe3bac22bc2411d4bdbbbebcfa34}
+      \strng{authornamehash}{97aabe3bac22bc2411d4bdbbbebcfa34}
+      \strng{authorfullhash}{97aabe3bac22bc2411d4bdbbbebcfa34}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Expert Systems with Applications}
+      \field{title}{KGroot: Root Cause Analysis in Microservices Using Knowledge Graphs and Graph Convolutional Networks}
+      \field{volume}{235}
       \field{year}{2024}
-      \field{pages}{639\bibrangedash 648}
-      \range{pages}{10}
-      \verb{doi}
-      \verb 10.1109/QRS62785.2024.00069
-      \endverb
-      \keyw{Software testing;Performance evaluation;Root cause analysis;Runtime;Event detection;Semantics;Software quality;Automated software testing;Log analysis;Machine learning;Log mining task;Root-cause events detection}
+      \field{pages}{121155}
+      \range{pages}{1}
+    \endentry
+    \entry{lstm2023bnn}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=ef065b28c31984323fd6d3483d29aafd}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {MDPI}%
+      }
+      \strng{namehash}{dc73eb82d413aea5c979b3637814969e}
+      \strng{fullhash}{dc73eb82d413aea5c979b3637814969e}
+      \strng{bibnamehash}{dc73eb82d413aea5c979b3637814969e}
+      \strng{authorbibnamehash}{dc73eb82d413aea5c979b3637814969e}
+      \strng{authornamehash}{dc73eb82d413aea5c979b3637814969e}
+      \strng{authorfullhash}{dc73eb82d413aea5c979b3637814969e}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Algorithms}
+      \field{number}{1}
+      \field{title}{Root Cause Analysis Based on LSTM and Bayesian Neural Network for Time Series Fault Data}
+      \field{volume}{18}
+      \field{year}{2023}
+      \field{pages}{11}
+      \range{pages}{1}
     \endentry
   \enddatalist
+  \missing{chen2017pca}
+  \missing{jovic2023naivebayes}
+  \missing{wang2021rootcause}
+  \missing{zhang2022sdn}
 \endrefsection
 \endinput
 

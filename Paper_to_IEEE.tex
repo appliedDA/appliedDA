@@ -1,9 +1,11 @@
-\documentclass[12pt,draftclsnofoot,onecolumn, journal]{IEEEtran}
-\usepackage[top=20mm, bottom=20mm, left=20mm, right=20mm]{geometry}
+\documentclass[10pt,draftclsnofoot,twocolumn, journal]{IEEEtran}
+\usepackage[letterpaper, top=20mm, bottom=20mm, left=20mm, right=20mm]{geometry}
 \usepackage[backend=biber,style=ieee,sorting=none]{biblatex}
 \usepackage{url}
 \usepackage{graphicx}
-
+\usepackage{setspace}
+\usepackage{mathptmx} % Times Roman font
+\singlespacing
 \addbibresource{references.bib}
 
 
@@ -14,15 +16,13 @@
 \author{
 \begin{minipage}{0.45\textwidth}
 \centering
-John Doe\\
-Department of Electrical Engineering\\
-ABC University\\
-\texttt{john@abc.com}
+Shijun Feng\\
+Ericsson AB\\
+\texttt{shijun.feng@ericsson.com}
 \end{minipage}
 \hfill
 \begin{minipage}{0.45\textwidth}
 \centering
-Jane Smith\\
 Department of Computer Science\\
 XYZ Institute\\
 \texttt{jane@xyz.edu}
@@ -31,26 +31,38 @@ XYZ Institute\\
 \maketitle
 \begin{abstract}
 Software systems generate a substantial number of fault reports during pre-deployment customer testing, making manual root cause analysis (RCA) both time-consuming and error-prone. This study explores the use of large language models (LLMs)—specifically T5, GPT-2, and a retrieval-augmented generation (RAG) model—to automate and enhance the RCA process in a domain-specific software engineering setting. Using a curated dataset of real-world fault descriptions and resolutions, the models were fine-tuned and evaluated using BLEU-4, ROUGE, and BERT-based semantic similarity metrics. Results indicate that T5 outperforms GPT-2 in lexical and structural fidelity (e.g., BLEU-4: 0.1810 vs. 0.1210), while RAG achieves the highest semantic similarity (BERT score: 0.7715). These findings suggest that combining T5’s precision in technical phrasing with RAG’s contextual understanding may offer a promising direction for developing intelligent RCA assistance tools that improve both accuracy and relevance in software fault diagnosis. Future work will focus on hybrid model optimization and user-centered system integration for real-world engineering workflows.
-\end{abstract} 
+\end{abstract}
+\begin{IEEEkeywords}
+Large Language Models, Root Cause Analysis, Software Fault Diagnosis, Artificial Intelligence, Automation
+\end{IEEEkeywords}
 \section{Introduction}
-As software companies deploy their solutions into operators’ networks, various issues inevitably arise during testing and operational use. Operators routinely report faults, many of which exhibit similar symptoms across different network environments. Efficiently processing, categorizing, and addressing these trouble reports is crucial to maintaining software reliability and customer satisfaction. However, the current handling of fault reports remains largely manual, requiring developers to invest substantial time and effort in reviewing, classifying, and resolving reported issues.  
 
-A particularly time-consuming challenge is the management of duplicate fault reports. Even when multiple operators report identical or highly similar issues due to cloud native environment complexity, Diego et al.\cite{10979844} focuses on Anomaly Detection and Root Cause Analysis in Cloud native environments using LLM and Bayesian networks, still, developers must manually verify each case, determine whether it corresponds to an existing problem, link it to previously resolved faults, or classify it as a novel issue requiring investigation. This repetitive, experience-driven process not only slows down response times but also increases the risk of inconsistent handling, leading to operational inefficiencies. Furthermore, the lack of automation in identifying and clustering similar reports often results in redundant work, extending resolution times unnecessarily.  
-
-The impact of this inefficiency extends beyond internal development workflows. Mishandling or delayed processing of fault reports can lead to software performance degradation, operational instability, and escalations from dissatisfied customers. In cases where critical faults remain unresolved due to oversight, operators may experience network disruptions, directly affecting service quality. These challenges highlight the urgent need for a more structured and intelligent approach to fault report analysis.  
-
-Currently, despite the structured process in place, developers addressing new fault reports largely rely on their individual experience and domain expertise. This reliance introduces variability in resolution times and effectiveness, particularly when dealing with complex software faults. The absence of a systematic, data-driven approach to RCA further exacerbates the problem, as developers must repeatedly analyze logs Bahareh Afshinpour et al.\cite{10684586}, correlate system behaviors, and manually infer root causes—a process that is both labor-intensive and prone to human error.  
-
-Given these limitations, there is significant potential for leveraging AI-driven solutions, particularly large language models (LLMs), to enhance the efficiency of fault report analysis. By automating the categorization, clustering, and RCA processes, LLMs can help reduce lead times, improve diagnostic accuracy, and optimize resource allocation within software development teams.
+\subsection{Context and Problem Statement}
+The deployment of software solutions in complex cloud-native environments generates a high volume of operational trouble reports (fault reports). Efficient handling of these reports, particularly in performing Root Cause Analysis (RCA), is critical for maintaining system reliability and customer satisfaction. Currently, fault report management is largely manual and experience-driven. A key challenge is the management of duplicate reports, which necessitates developers to manually verify, classify, and link issues \cite{10979844}. This leads to significant redundant work, delayed response times, inconsistent fault handling, and ultimately, operational inefficiencies that impact service quality. This highlights the urgent need for an automated, data-driven approach to RCA.
 
 
-\subsection*{Background}
-\begin{itemize}
-    \item First item
-    \item Second item
-    \item Third item
-    \item Forth item 
-    \item Fifth item
-\end{itemize}
+\section{RELATED WORK}
+\subsubsection{Traditional ML Approaches in RCA}
+Root cause analysis (RCA) using machine learning has gained significant traction across domains such as software engineering, manufacturing, and networking. Traditional approaches often apply supervised models like support vector machines (SVMs), decision trees, or Naïve Bayes classifiers to classify faults based on historical data.
+
+Wang et al.~\cite{wang2021rootcause} train SVMs on textual bug reports to predict fault types (e.g., concurrency, memory, semantic bugs), achieving solid accuracy but providing no interpretability or semantic insight to support engineers during resolution. Chen et al.~\cite{chen2017pca} combine PCA and SVM for fault detection in manufacturing, successfully identifying key structured features but excluding natural language inputs. Similarly, Zhang et al.~\cite{zhang2022sdn} apply ML to SDN faults using time-series data, offering fast classification but limited diagnostic support.
+
+Among interpretable models, Jovic et al.~\cite{jovic2023naivebayes} use Naïve Bayes to identify predictive terms in bug descriptions, offering limited lexical guidance to engineers. However, none of these works integrate semantic retrieval or lexical pattern analysis to directly aid fault resolution.
+
+\subsubsection{Neural Network and Deep Learning Approaches in RCA}
+Deep learning has been increasingly adopted for root cause analysis (RCA), particularly in domains like manufacturing, network management, and software systems. Unlike traditional machine learning approaches, deep neural networks offer powerful feature learning capabilities, but not all methods provide semantic insight or lexical interpretability needed to support engineers in resolving issues.
+
+Artificial neural networks (ANNs) and residual causal models like Sparse Causal Residual Neural Networks (SCRNN) have been applied to structured sensor data in manufacturing and quality control tasks \cite{chen2022scrnn}. These models perform well in predicting fault contributors from numerical logs but do not operate on natural language input or offer semantic interpretability.
+
+Other approaches leverage deep learning architectures such as convolutional neural networks (CNNs), recurrent neural networks (RNNs), autoencoders, and transformers for unsupervised anomaly detection in system logs \cite{anomaly2021dl}. While these methods are useful for identifying outliers, they typically lack causal reasoning and are not designed to interpret textual summaries or aid fault resolution.
+
+More promising results are seen in graph-based models. KGroot \cite{kgroot2024}, a recent framework combining knowledge graphs with graph convolutional networks (GCNs), constructs semantic fault graphs from event traces and textual logs. It enables similarity-based retrieval of past faults with known causes, providing contextual and semantic guidance. This makes it particularly well-suited for cases where fault descriptions, priorities, and summaries are available.
+
+Another technique involves combining LSTM networks with Bayesian neural networks (BNNs) to model probabilistic causality across time-series data \cite{lstm2023bnn}. Though effective in capturing causal structures, it relies entirely on structured logs and does not process natural language input.
+\subsubsection*{Summary of Related Word}
+Traditional machine learning and deep learning methods have laid the foundation for automated root cause analysis, especially in classification and clustering tasks. However, these approaches often fall short in dealing with unstructured, domain-specific text where lexical and semantic nuance is crucial. Recent work using graph-based or retrieval-augmented models has improved case similarity detection, yet lacks generalization across diverse linguistic expressions. This opens the door for large language models (LLMs), which inherently support contextual understanding, semantic retrieval, and natural language generation. As such, this thesis explores whether LLMs—specifically T5, GPT-2, and RAG—can serve not as replacements but as intelligent assistants to engineers performing RCA, addressing both relevance and clarity in fault resolution.
+\section{METHODOLOGY}
+\section{RESULTS AND DISCUSSION}
+\section{CONCLUSION AND FUTURE WORK}
 \printbibliography
 \end{document}
