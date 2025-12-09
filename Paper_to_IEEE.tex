@@ -102,12 +102,14 @@ The Answer field follows a standardized, multi-component structure, including th
 \textbf{Component} & \textbf{Function in RCA} \\
 \midrule
 Condition & Description of conditions that trigger the fault. \\
+\\
 Description of the fault & Detailed technical explanation of the issue. \\
+\\
 Description of the correction & The steps taken or planned to resolve the fault. \\
 \bottomrule
 \end{tabularx}
 \vspace{1em}
-\caption{\textbf{Standardized Answer Structure for Root Cause Analysis (RCA)}}
+\caption{\textbf{Standardized Answer Structure for RCA (Root Cause Analysis)}}
 \end{table}
 
 \subsubsection{Data Cleaning and Wrangling}
@@ -140,7 +142,9 @@ Three distinct LLM architectures were selected to represent different paradigms 
     \textbf{Model} & \textbf{Type} & \textbf{Rationale for RCA} \\
 \midrule
 \textbf{T5 (Base)} & Encoder-Decoder (Seq2Seq) & Unified \textbf{Text-to-Text} transformation for structured output. \\
+\\
 \textbf{GPT-2 (Medium)} & Autoregressive Decoder & Evaluates flexible, \textbf{free-form generative} capabilities. \\
+\\
 \textbf{RAG} & Retrieval-Augmented & Evaluates benefit of \textbf{external grounding} via historical context. \\
 \bottomrule
 \end{tabularx}
