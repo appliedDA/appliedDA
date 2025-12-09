@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.4)  9 DEC 2025 20:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.4)  9 DEC 2025 20:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -547,26 +547,56 @@ Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
 \TX@delta=\dimen259
 \TX@cols=\count424
 \TX@ftn=\toks26
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen260
+\captionmargin=\dimen261
+\caption@leftmargin=\dimen262
+\caption@rightmargin=\dimen263
+\caption@width=\dimen264
+\caption@indent=\dimen265
+\caption@parindent=\dimen266
+\caption@hangindent=\dimen267
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+Package caption Info: \@makecaption = \long macro:#1#2->\ifx \@captype \@IEEEtablestring \footnotesize \bgroup \par \centering \@IEEEtabletopskipstrut {\normalfont \footnotesize #1}\\{\normalfont \footnotesize \scshape #2}\par \addvspace {0.5\baselineskip }\egroup \@IEEEtablecaptionsepspace \else \@IEEEfigurecaptionsepspace \setbox \@tempboxa \hbox {\normalfont \footnotesize {#1.}\nobreakspace \nobreakspace #2}\ifdim \wd \@tempboxa >\hsize \setbox \@tempboxa \hbox {\normalfont \footnotesize {#1.}\nobreakspace \nobreakspace }\parbox [t]{\hsize }{\normalfont \footnotesize \noindent \unhbox \@tempboxa #2}\else \ifCLASSOPTIONconference \hbox to\hsize {\normalfont \footnotesize \hfil \box \@tempboxa \hfil }\else \hbox to\hsize {\normalfont \footnotesize \box \@tempboxa \hfil }\fi \fi \fi  on input line 1175.
 )
-\@quotelevel=\count425
-\@quotereset=\count426
+
+Package caption Warning: Unknown document class (or package),
+(caption)                standard defaults will be used.
+See the caption package documentation for explanation.
+
+\c@caption@flags=\count425
+\c@continuedfloat=\count426
+)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count427
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count428
+)
+\@quotelevel=\count429
+\@quotereset=\count430
  (./Paper_to_IEEE.aux)
 \openout1 = `Paper_to_IEEE.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
 
 -- Lines per column: 56 (approximate, difference = 9.15898pt).
 *geometry* driver: auto-detecting
@@ -616,20 +646,20 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Paper_to_IEEE.bbl' found.
  (./Paper_to_IEEE.bbl)
-Package biblatex Info: Reference section=0 on input line 18.
-Package biblatex Info: Reference segment=0 on input line 18.
+Package biblatex Info: Reference section=0 on input line 19.
+Package biblatex Info: Reference segment=0 on input line 19.
  (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count427
-\scratchdimen=\dimen260
+\scratchcounter=\count431
+\scratchdimen=\dimen268
 \scratchbox=\box59
-\nofMPsegments=\count428
-\nofMParguments=\count429
+\nofMPsegments=\count432
+\nofMParguments=\count433
 \everyMPshowfont=\toks27
-\MPscratchCnt=\count430
-\MPscratchDim=\dimen261
-\MPnumerator=\count431
-\makeMPintoPDFobject=\count432
+\MPscratchCnt=\count434
+\MPscratchDim=\dimen269
+\MPnumerator=\count435
+\makeMPintoPDFobject=\count436
 \everyMPtoPDFconversion=\toks28
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -637,35 +667,37 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 37.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 38.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 37.
-LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 37.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 38.
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 38.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 37.
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 38.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 37.
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 38.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 37.
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 38.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8.14006> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 37.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6.60007> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 37.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
 
 
 
-Underfull \hbox (badness 2035) in paragraph at lines 61--62
+Underfull \hbox (badness 2035) in paragraph at lines 62--63
 \OT1/ptm/m/n/10 mod-els like Sparse Causal Resid-ual Neu-ral Net-works
  []
 
@@ -676,25 +708,69 @@ Underfull \hbox (badness 2035) in paragraph at lines 61--62
 
 ]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 91.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 92.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 91.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 92.
 
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--150
+Package caption Warning: \label without proper reference on input line 100.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `tab:answer-structure' on page 2 undefined on input line 95.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--151
 []|\OT1/ptm/b/n/9 GPT-2
  []
 
 
-Overfull \hbox (1.85776pt too wide) in paragraph at lines 150--150
+Overfull \hbox (1.85776pt too wide) in paragraph at lines 151--151
 \OT1/ptm/b/n/9 (Medium)| 
  []
 
 
 
 [2]
-Underfull \hbox (badness 2326) in paragraph at lines 174--174
+Underfull \hbox (badness 1622) in paragraph at lines 175--176
+\OT1/ptm/m/n/10 three model ar-chi-tec-tures: \OT1/ptm/b/n/10 T5\OT1/ptm/m/n/10 , \OT1/ptm/b/n/10 GPT-2\OT1/ptm/m/n/10 , and \OT1/ptm/b/n/10 Retrieval-
+ []
+
+<image/t5-small-training.png, id=15, 714.7503pt x 426.393pt>
+File: image/t5-small-training.png Graphic file (type png)
+<use image/t5-small-training.png>
+Package pdftex.def Info: image/t5-small-training.png  used on input line 191.
+(pdftex.def)             Requested size: 240.23016pt x 143.3126pt.
+<image/gpt2-training-validation-loss.png, id=17, 714.7503pt x 426.393pt>
+File: image/gpt2-training-validation-loss.png Graphic file (type png)
+<use image/gpt2-training-validation-loss.png>
+Package pdftex.def Info: image/gpt2-training-validation-loss.png  used on input line 197.
+(pdftex.def)             Requested size: 240.23016pt x 143.3126pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+
+Overfull \hbox (81.33617pt too wide) in paragraph at lines 213--222
+ [][] 
+ []
+
+
+Underfull \hbox (badness 2809) in paragraph at lines 225--226
+ \OT1/ptm/m/it/10 1) Lex-i-cal and Struc-tural Fi-delity: [][] \OT1/ptm/m/n/10 The \OT1/ptm/b/n/10 T5 \OT1/ptm/m/n/10 model
+ []
+
+
+Underfull \hbox (badness 1803) in paragraph at lines 225--226
+\OT1/ptm/m/n/10 achieved the high-est scores across all lex-i-cal met-rics
+ []
+
+
+
+[3 <./image/t5-small-training.png> <./image/gpt2-training-validation-loss.png>]
+Underfull \hbox (badness 2326) in paragraph at lines 245--245
 \OT1/ptm/m/n/10 de-tec-tion in root cause anal-y-sis,'' \OT1/ptm/m/it/10 arXiv preprint
  []
 
@@ -702,28 +778,34 @@ Underfull \hbox (badness 2326) in paragraph at lines 174--174
 
 
 
-[3] (./Paper_to_IEEE.aux)
+[4
+
+] (./Paper_to_IEEE.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package logreq Info: Writing requests to 'Paper_to_IEEE.run.xml'.
 \openout1 = `Paper_to_IEEE.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 12601 strings out of 473190
- 233654 string characters out of 5715800
- 1064075 words of memory out of 5000000
- 35706 multiletter control sequences out of 15000+600000
- 622653 words of font info for 165 fonts, out of 8000000 for 9000
+ 14075 strings out of 473190
+ 262432 string characters out of 5715800
+ 1089141 words of memory out of 5000000
+ 37173 multiletter control sequences out of 15000+600000
+ 620517 words of font info for 164 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,10n,81p,1247b,1221s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Paper_to_IEEE.pdf (3 pages, 96475 bytes).
+ 67i,10n,81p,1247b,1221s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Paper_to_IEEE.pdf (4 pages, 211099 bytes).
 PDF statistics:
- 45 PDF objects out of 1000 (max. 8388607)
- 27 compressed objects within 1 object stream
+ 63 PDF objects out of 1000 (max. 8388607)
+ 36 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

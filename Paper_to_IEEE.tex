@@ -11,6 +11,7 @@
 \usepackage{amstext}
 \usepackage{booktabs}
 \usepackage{tabularx}
+\usepackage{subcaption}
 \singlespacing
 \addbibresource{references.bib}
 
@@ -169,6 +170,76 @@ The \textbf{Evaluation Procedure} involved generating an RCA for every entry in 
 % (duplicate line removed - use previous line with texttt formatting)
 
 \section{RESULTS AND DISCUSSION}
+\label{sec:results}
+
+This section presents the quantitative evaluation of the three model architectures: \textbf{T5}, \textbf{GPT-2}, and \textbf{Retrieval-Augmented Generation (RAG)}. Performance is assessed on the 20\% validation set using standard Natural Language Generation (NLG) metrics.
+
+\subsection{Training Dynamics Analysis}
+
+The fine-tuning process for the generative models (T5 and GPT-2) was monitored to assess stability and generalization.
+
+\begin{itemize}
+    \item \textbf{T5 Performance:} The T5 model exhibited minor fluctuations in training loss but maintained a \textbf{stable validation loss} throughout all 10 epochs. This stability indicates that the Encoder-Decoder architecture generalized effectively to the unseen fault report data.
+    \item \textbf{GPT-2 Performance:} The GPT-2 model showed significant \textbf{instability and erratic fluctuation} in training loss (ranging between 1.67 and 3.00). This inconsistent convergence suggests that the autoregressive, decoder-only architecture struggled to adapt to the structured, sequence-to-sequence nature of the RCA task.
+\end{itemize}
+The performance of the RAG model is evaluated primarily through its end-to-end output metrics in Section \ref{sec:quantitative-comparison}, as generation loss alone does not fully capture its effectiveness.
+
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{image/t5-small-training.png}
+        \caption{T5 Training \& Validation Loss}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{image/gpt2-training-validation-loss.png}
+        \caption{GPT-2 Training \& Validation Loss}
+    \end{subfigure}
+    \caption{T5 and GPT-2 Training and Validation Loss Curves}
+    % \Description{Training and validation loss curves for T5 and GPT-2 models}
+\end{figure}
+
+\subsection{Quantitative Metric Comparison}
+\label{sec:quantitative-comparison}
+
+The models were evaluated by comparing their generated RCA explanations against the expert-written ground truth using lexical overlap metrics ($\text{BLEU}$, $\text{ROUGE}$) and semantic similarity ($\text{BERTScore}$). The results are summarized in Table \ref{tab:model_comparison}.
+
+\begin{table}[h]
+\centering
+\caption{Model Performance Comparison on RCA Generation}
+\label{tab:model_comparison}
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Model} & \textbf{BLEU-4} & \textbf{ROUGE-1} & \textbf{ROUGE-L} & \textbf{ROUGE-2} & \textbf{BERT Score} \\
+\midrule
+\textbf{T5} & \textbf{0.1810} & \textbf{0.3869} & \textbf{0.3463} & \textbf{0.2821} & 0.5478 \\
+\textbf{GPT-2} & 0.1210 & 0.1885 & 0.1001 & 0.0432 & 0.4674 \\
+\textbf{RAG} & 0.0037 & 0.0682 & 0.0447 & 0.0072 & \textbf{0.7715} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Lexical and Structural Fidelity}
+The \textbf{T5} model achieved the highest scores across all lexical metrics ($\text{BLEU-4}$, $\text{ROUGE-1}$, $\text{ROUGE-L}$, $\text{ROUGE-2}$). This demonstrates its ability to reproduce the specific terminology and structured format required for formal RCA documentation. The **RAG** model recorded the lowest lexical scores ($\text{BLEU-4}=0.0037$), reflecting its tendency to paraphrase retrieved information rather than matching exact n-grams from the ground truth.
+
+\subsubsection{Semantic Similarity}
+The \textbf{RAG} model achieved the highest semantic similarity score ($\text{BERTScore}=0.7715$). Since $\text{BERTScore}$ evaluates meaning beyond exact word matches, this finding is crucial: the RAG model generates contextually and technically equivalent explanations, highlighting its strength in knowledge grounding. The \textbf{T5} model's $\text{BERTScore}$ of $0.5478$ confirmed a strong balance between structured output and semantic correctness.
+
+\subsection{Synthesis of Findings}
+The evaluation demonstrates a distinct trade-off in architectural performance for RCA:
+\begin{itemize}
+    \item \textbf{T5 excels in structured reporting and automation,} achieving the highest lexical scores necessary for outputs that conform to rigid documentation standards.
+    \item \textbf{RAG excels in semantic relevance and reasoning,} achieving the highest $\text{BERTScore}$ which is critical for providing deep, contextually-grounded insights valuable to a human engineer.
+\end{itemize}
+These results provide the quantitative basis for guiding the selection of LLM architectures in practical engineering workflows.
+
+
+
+
+
+
 \section{CONCLUSION AND FUTURE WORK}
 \printbibliography
 \end{document}
