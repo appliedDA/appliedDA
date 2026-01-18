@@ -17,9 +17,7 @@
 
 
 \begin{document}
-\title{Aiding Software Root Cause Analysis with Large Language Models 
-\newline
-\Large - Evaluation of the Effectiveness of Fine-tuned T5, GPT, and RAG in the handling Customer Fault Reports}
+\title{Benchmarking LLM Architectures for Industrial Root Cause Analysis: Fine-Tuning vs. Retrieval-Augmentation}
 \author{
 \begin{minipage}{0.45\textwidth}
 \centering
@@ -37,16 +35,41 @@ XYZ Institute\\
 }
 \maketitle
 \begin{abstract}
-Software systems generate a substantial number of fault reports during pre-deployment customer testing, making manual root cause analysis (RCA) both time-consuming and error-prone. This study explores the use of large language models (LLMs)—specifically T5, GPT-2, and a retrieval-augmented generation (RAG) model—to automate and enhance the RCA process in a domain-specific software engineering setting. Using a curated dataset of real-world fault descriptions and resolutions, the models were fine-tuned and evaluated using BLEU-4, ROUGE, and BERT-based semantic similarity metrics. Results indicate that T5 outperforms GPT-2 in lexical and structural fidelity (e.g., BLEU-4: 0.1810 vs. 0.1210), while RAG achieves the highest semantic similarity (BERT score: 0.7715). These findings suggest that combining T5’s precision in technical phrasing with RAG’s contextual understanding may offer a promising direction for developing intelligent RCA assistance tools that improve both accuracy and relevance in software fault diagnosis. Future work will focus on hybrid model optimization and user-centered system integration for real-world engineering workflows.
+In modern industrial software ecosystems, the high volume of operational fault reports renders manual Root Cause Analysis (RCA) a significant maintenance bottleneck, often leading to delayed resolution and high operational costs. While Large Language Models (LLMs) show promise in automating diagnostic tasks, a systematic evaluation of architectural paradigms—specifically Supervised Fine-Tuning (SFT) versus Retrieval-Augmented Generation (RAG)—remains absent in specialized industrial domains. This study presents a rigorous benchmarking of three distinct architectures: an encoder-decoder model ($T5$), a lightweight decoder-only baseline ($GPT-2$), and a RAG framework, evaluated on a curated dataset of real-world industrial fault reports. Our findings reveal a critical architectural trade-off: $T5$ achieves superior lexical and structural fidelity (e.g., BLEU-4 of 0.1810 vs. GPT-2’s 0.1210), whereas RAG provides the highest semantic alignment ($BERTScore$ of 0.7715). These results suggest that while SFT is optimal for generating structured reports, RAG is superior for contextually grounded reasoning in complex fault scenarios. We propose a hybrid framework that leverages the structural precision of $T5$ and the semantic depth of RAG, providing a metric-driven roadmap for deploying intelligent RCA assistants in industrial software maintenance workflows.
 \end{abstract}
+
 \begin{IEEEkeywords}
-Large Language Models, Root Cause Analysis, Software Fault Diagnosis, Artificial Intelligence, Automation
+Root Cause Analysis (RCA), Large Language Models (LLM), T5, GPT-2, Retrieval-Augmented Generation (RAG), Software Maintenance, Fine-tuning.
 \end{IEEEkeywords}
-\section{Introduction}
 
-\subsection{Context and Problem Statement}
-The deployment of software solutions in complex cloud-native environments generates a high volume of operational trouble reports (fault reports). Efficient handling of these reports, particularly in performing Root Cause Analysis (RCA), is critical for maintaining system reliability and customer satisfaction. Currently, fault report management is largely manual and experience-driven. A key challenge is the management of duplicate reports, which necessitates developers to manually verify, classify, and link issues \cite{10979844}. This leads to significant redundant work, delayed response times, inconsistent fault handling, and ultimately, operational inefficiencies that impact service quality. This highlights the urgent need for an automated, data-driven approach to RCA.
+\section{INTRODUCTION}
+\label{sec:introduction}
 
+Modern cloud-native networks generate a high volume of operational trouble reports, making Root Cause Analysis (RCA) a significant maintenance bottleneck. Currently, fault report management is largely manual and experience-driven, leading to delayed response times and redundant work—particularly in identifying duplicate issues across diverse environments \cite{10979844}. The lack of automated frameworks increases the risk of inconsistent handling and human error in correlating system behaviors and logs \cite{10684586}.
+
+While Large Language Models (LLMs) have shown potential in automating software engineering tasks \cite{chen2024automatic, 10765066}, existing studies often evaluate models in isolation. There is a lack of systematic comparison between architectural paradigms—specifically supervised fine-tuning (SFT) versus retrieval-augmentation—within specialized industrial domains. This study addresses this gap by benchmarking three distinct architectures: a fine-tuned encoder-decoder model ($T5$), a decoder-only autoregressive model ($GPT-2$), and a Retrieval-Augmented Generation ($RAG$) system using a curated dataset of textual fault reports.
+
+The primary contributions of this paper are:
+\begin{itemize}
+    \item \textbf{Performance Evaluation:} A quantitative analysis of Fine-Tuning $T5$ and $GPT-2$ models using lexical ($\text{BLEU}$, $\text{ROUGE}$) and semantic ($\text{BERTScore}$) metrics.
+    \item \textbf{Architectural Comparison:} A side-by-side comparison of SFT versus RAG approaches, identifying trade-offs in output quality and engineering workflow alignment.
+    \item \textbf{Selection Framework:} A metric-driven framework to guide practitioners in selecting or hybridizing LLM architectures for industrial RCA tasks.
+\end{itemize}
+
+The remainder of this paper is organized as follows: Section \ref{sec:related-work} reviews related work; Section \ref{sec:methodology} details the experimental setup; Section \ref{sec:results} presents the quantitative findings; and Section \ref{sec:conclusion} concludes the study.
+
+\section{RESEARCH QUESTIONS}
+\label{sec:research-questions}
+
+To address the challenges of automating software diagnostic reporting, this study investigates the following research questions:
+
+\begin{itemize}
+    \item \textbf{RQ1:} To what extent can Large Language Models (LLMs) be Fine-Tuning on domain-specific fault report data to generate lexically and semantically accurate RCA explanations?
+    \item \textbf{RQ2:} How do supervised Fine-Tuning (SFT) architectures (e.g., $T5$, $GPT-2$) compare to Retrieval-Augmented Generation (RAG) paradigms regarding output quality and alignment with engineering workflows?
+    \item \textbf{RQ3:} How do the computational overhead and the requirement for domain-specific grounding influence the choice between SFT and RAG for industrial software maintenance?
+\end{itemize}
+
+Consistent with the technical scope of this study, model performance is evaluated exclusively through automated Natural Language Generation (NLG) metrics, specifically $\text{BLEU}$, $\text{ROUGE}$, and $\text{BERTScore}$. While human-centric evaluation (e.g., expert-rated utility) is recognized as a vital component of practical deployment, it remains outside the scope of this baseline quantitative assessment.
 
 \section{RELATED WORK}
 \subsubsection{Traditional ML Approaches in RCA}
@@ -205,20 +228,20 @@ The performance of the RAG model is evaluated primarily through its end-to-end o
 \label{sec:quantitative-comparison}
 
 The models were evaluated by comparing their generated RCA explanations against the expert-written ground truth using lexical overlap metrics ($\text{BLEU}$, $\text{ROUGE}$) and semantic similarity ($\text{BERTScore}$). The results are summarized in Table \ref{tab:model_comparison}.
-
 \begin{table}[h]
 \centering
+\small
 \caption{Model Performance Comparison on RCA Generation}
 \label{tab:model_comparison}
-\begin{tabular}{lccccc}
+\begin{tabularx}{\columnwidth}{>{\bfseries}X c c c c c}
 \toprule
-\textbf{Model} & \textbf{BLEU-4} & \textbf{ROUGE-1} & \textbf{ROUGE-L} & \textbf{ROUGE-2} & \textbf{BERT Score} \\
+Model  & BLEU-4 & ROUGE-1 & ROUGE-L & ROUGE-2 & BERT Score \\
 \midrule
-\textbf{T5} & \textbf{0.1810} & \textbf{0.3869} & \textbf{0.3463} & \textbf{0.2821} & 0.5478 \\
-\textbf{GPT-2} & 0.1210 & 0.1885 & 0.1001 & 0.0432 & 0.4674 \\
-\textbf{RAG} & 0.0037 & 0.0682 & 0.0447 & 0.0072 & \textbf{0.7715} \\
+T5 & \textbf{0.1810} & \textbf{0.3869} & \textbf{0.3463} & \textbf{0.2821} & 0.5478 \\
+GPT-2 & 0.1210 & 0.1885 & 0.1001 & 0.0432 & 0.4674 \\
+RAG & 0.0037 & 0.0682 & 0.0447 & 0.0072 & \textbf{0.7715} \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \subsubsection{Lexical and Structural Fidelity}
@@ -226,6 +249,9 @@ The \textbf{T5} model achieved the highest scores across all lexical metrics ($\
 
 \subsubsection{Semantic Similarity}
 The \textbf{RAG} model achieved the highest semantic similarity score ($\text{BERTScore}=0.7715$). Since $\text{BERTScore}$ evaluates meaning beyond exact word matches, this finding is crucial: the RAG model generates contextually and technically equivalent explanations, highlighting its strength in knowledge grounding. The \textbf{T5} model's $\text{BERTScore}$ of $0.5478$ confirmed a strong balance between structured output and semantic correctness.
+
+\subsubsection{Metric Sensitivity and Architectural Divergence}
+A notable discrepancy is observed in the RAG model’s performance, which recorded a near-zero BLEU-4 score ($0.0037$) despite achieving the highest BERTScore ($0.7715$). This divergence highlights the limitations of n-gram-based metrics for retrieval-based systems. While T5 is optimized to minimize cross-entropy loss against a specific ground-truth string (leading to high lexical fidelity), the RAG model synthesizes information from historical contexts that may be semantically identical but linguistically distinct from the target answer. The high BERTScore confirms that the RAG model captures the technical essence of the fault resolution, even when it does not mimic the exact phrasing of the original engineer.
 
 \subsection{Synthesis of Findings}
 The evaluation demonstrates a distinct trade-off in architectural performance for RCA:
@@ -235,11 +261,31 @@ The evaluation demonstrates a distinct trade-off in architectural performance fo
 \end{itemize}
 These results provide the quantitative basis for guiding the selection of LLM architectures in practical engineering workflows.
 
-
-
-
-
-
 \section{CONCLUSION AND FUTURE WORK}
+\label{sec:conclusion}
+
+This study investigated the application of Large Language Models (LLMs) for automated Root Cause Analysis (RCA) in software fault reports, comparing Fine-Tuning generative models ($T5$, $GPT-2$) with a Retrieval-Augmented Generation ($RAG$) approach.
+
+\subsection{Summary of Findings}
+The experimental results provide several key insights:
+\begin{itemize}
+    \item \textbf{Architectural Performance:} Fine-tuning domain-specific LLMs significantly enhances diagnostic accuracy. $T5$ emerged as the superior model for structured reporting, achieving the highest lexical fidelity. Conversely, RAG demonstrated superior semantic alignment. This suggests that lexical metrics like BLEU may penalize RAG systems for generative creativity, whereas semantic metrics like BERTScore more accurately reflect their utility in providing diverse yet technically sound diagnostic insights
+    \item \textbf{Metric-Driven Evaluation:} Automated metrics successfully captured complementary aspects of model performance. While $BLEU$ and $ROUGE$ identified the structural strengths of $T5$, $BERTScore$ highlighted the interpretive value of $RAG$, establishing a systematic foundation for evaluating RCA tasks without immediate human intervention.
+    \item \textbf{Selection Framework:} We introduced a three-dimensional framework—comprising Output Quality, Domain Alignment, and Usability—to guide model selection. The analysis indicates that a \textbf{hybrid RAG-T5 approach} is likely the most robust strategy for balancing structural documentation requirements with semantic precision.
+\end{itemize}
+
+
+
+\subsection{Contributions and Limitations}
+This research establishes a replicable baseline for LLM-based RCA in software engineering. However, the study's scope was constrained by: (i) an exclusive focus on textual data, omitting multimodal diagnostic signals such as logs and charts; (ii) inherent noise in the expert-written ground truth labels; and (iii) the use of automated metrics as a proxy for human expert judgment. Despite these constraints, the study demonstrates that domain-specific fine-tuning makes LLM integration feasible for real-world fault management.
+
+\subsection{Future Work}
+Future research will build upon this foundation in the following directions:
+\begin{itemize}
+    \item \textbf{Hybrid Prototype Development:} Implementing an integrated RCA assistant that combines $RAG$'s retrieval capabilities with $T5$'s generation quality to support interactive engineering workflows.
+    \item \textbf{Multimodal Integration:} Extending model architectures to process heterogeneous data sources, including system logs, performance metrics, and commit histories, to improve diagnostic depth.
+    \item \textbf{Human-in-the-Loop Validation:} Conducting qualitative studies with domain experts to assess the interpretability, trust, and practical usability of model-generated RCA explanations.
+    \item \textbf{Scalability and Generalization:} Evaluating larger model variants (e.g., $T5$-Large, $GPT-4$) across diverse industrial datasets to mitigate training instabilities and enhance cross-domain generalization.
+\end{itemize}
 \printbibliography
 \end{document}

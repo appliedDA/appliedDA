@@ -1,0 +1,18 @@
+[0] Config.pm:308> INFO - This is Biber 2.20
+[0] Config.pm:311> INFO - Logfile is 'Paper_to_IEEE.blg'
+[26] biber-darwin:340> INFO - === Sat Jan 17, 2026, 10:45:49
+[33] Biber.pm:420> INFO - Reading 'Paper_to_IEEE.bcf'
+[57] Biber.pm:994> INFO - Found 12 citekeys in bib section 0
+[62] Biber.pm:4463> INFO - Processing section 0
+[66] Biber.pm:4654> INFO - Looking for bibtex file 'references.bib' for section 0
+[67] bibtex.pm:1713> INFO - LaTeX decoding ...
+[78] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
+[116] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[116] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[116] Biber.pm:4283> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-US'
+[116] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
+[119] bbl.pm:676> INFO - Writing 'Paper_to_IEEE.bbl' with encoding 'UTF-8'
+[121] bbl.pm:779> INFO - Output to Paper_to_IEEE.bbl
+[121] Biber.pm:131> WARN - Duplicate entry key: 'raffel2020exploring' in file 'references.bib', skipping ...
+[121] Biber.pm:131> WARN - BibTeX subsystem: /var/folders/jl/4tms6xx56b91wfx6wkbhb89r0000gn/T/biber_tmp_Dpdx/33e59b5ca9ec342068223d604c3f8d55_67379.utf8, line 203, warning: 213 characters of junk seen at toplevel
+[121] Biber.pm:133> INFO - WARNINGS: 2
