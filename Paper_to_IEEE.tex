@@ -56,7 +56,7 @@ The primary contributions of this paper are:
     \item \textbf{Selection Framework:} A metric-driven framework to guide practitioners in selecting or hybridizing LLM architectures for industrial RCA tasks.
 \end{itemize}
 
-The remainder of this paper is organized as follows: Section \ref{sec:related-work} reviews related work; Section \ref{sec:methodology} details the experimental setup; Section \ref{sec:results} presents the quantitative findings; and Section \ref{sec:conclusion} concludes the study.
+The remainder of this paper is structured as follows: Section \ref{sec:research-questions} formulates the research questions guiding this benchmarking study; Section \ref{sec:related-work} surveys existing approaches to automated RCA and positions this work within the broader LLM landscape; Section \ref{sec:methodology} describes the experimental design, dataset preparation, and evaluation metrics; Section \ref{sec:results} presents a detailed quantitative analysis comparing the three architectures; and Section \ref{sec:conclusion} summarizes key findings and outlines future research directions.
 
 \section{RESEARCH QUESTIONS}
 \label{sec:research-questions}
@@ -72,6 +72,7 @@ To address the challenges of automating software diagnostic reporting, this stud
 Consistent with the technical scope of this study, model performance is evaluated exclusively through automated Natural Language Generation (NLG) metrics, specifically $\text{BLEU}$, $\text{ROUGE}$, and $\text{BERTScore}$. While human-centric evaluation (e.g., expert-rated utility) is recognized as a vital component of practical deployment, it remains outside the scope of this baseline quantitative assessment.
 
 \section{RELATED WORK}
+\label{sec:related-work}
 \subsubsection{Traditional ML Approaches in RCA}
 Root cause analysis (RCA) using machine learning has gained significant traction across domains such as software engineering, manufacturing, and networking. Traditional approaches often apply supervised models like support vector machines (SVMs), decision trees, or Naïve Bayes classifiers to classify faults based on historical data.
 
@@ -120,7 +121,7 @@ The Answer field follows a standardized, multi-component structure, including th
 
 \begin{table}[ht]
 \centering
-
+\caption{\textbf{Standardized Answer Structure for RCA (Root Cause Analysis)}}
 \label{tab:answer-structure}
 \begin{tabularx}{\columnwidth}{>{\bfseries}p{0.25\columnwidth} >{\raggedright\arraybackslash}X }
 \toprule
@@ -134,7 +135,6 @@ Description of the correction & The steps taken or planned to resolve the fault.
 \bottomrule
 \end{tabularx}
 \vspace{1em}
-\caption{\textbf{Standardized Answer Structure for RCA (Root Cause Analysis)}}
 \end{table}
 
 \subsubsection{Data Cleaning and Wrangling}
@@ -145,40 +145,70 @@ The raw data underwent several preprocessing steps:
     \item \textbf{Partitioning:} The cleaned dataset was randomly partitioned into a \textbf{Training set (80\%)} and a \textbf{Validation set (20\%)}, stratified by Priority.
 \end{enumerate}
 
-\subsection{Model Architectures and Setup}
-\label{sec:model-arch}
+\subsection{Model Architectures and Implementation}
+\label{subsec:model_architectures}
 
-Three distinct LLM architectures were selected to represent different paradigms in text generation relevant to RCA.
+To evaluate the trade-offs between different architectural paradigms for industrial RCA, we implemented three models representing state-of-the-art sequence-to-sequence learning, autoregressive generation, and retrieval-augmented reasoning. All experiments were conducted using the Hugging Face Transformers library within a containerized Kubeflow environment.
 
-\begin{table}[ht]
-\centering\small
-\caption{\textbf{Summary of Model Architectures}}
-\label{tab:models-summary}
-% The column widths are adjusted:
-% Column 1: Fixed 15% width (p{0.15\columnwidth})
-% Column 2: Fixed 25% width (p{0.25\columnwidth})
-% Column 3: The rest (X), now ~60%
-\begin{tabularx}{\columnwidth}{
-    >{\bfseries}p{0.15\columnwidth} 
-    >{\raggedright}p{0.25\columnwidth} 
-    >{\raggedright\arraybackslash}X 
-}
-    \toprule
-    \textbf{Model} & \textbf{Type} & \textbf{Rationale for RCA} \\
-\midrule
-\textbf{T5 (Base)} & Encoder-Decoder (Seq2Seq) & Unified \textbf{Text-to-Text} transformation for structured output. \\
-\\
-\textbf{GPT-2 (Medium)} & Autoregressive Decoder & Evaluates flexible, \textbf{free-form generative} capabilities. \\
-\\
-\textbf{RAG} & Retrieval-Augmented & Evaluates benefit of \textbf{external grounding} via historical context. \\
-\bottomrule
-\end{tabularx}
-\end{table}
-\subsubsection{Training Environment}
-Experiments were executed in a containerized \textbf{Kubeflow environment} using Python, the Hugging Face Transformers library, and PyTorch. The hardware setup included 1 GPU (16 GB memory) and $\sim$30 GB RAM.
+\subsubsection{Supervised Fine-Tuning (SFT) Architectures}
+We selected two models to evaluate the impact of architectural directionality on RCA generation:
+\begin{itemize}
+    \item \textbf{T5-Small:} An encoder-decoder (Seq2Seq) model with approximately 60 million parameters. T5 was chosen for its unified ``text-to-text'' framework, which is optimized for conditional generation tasks where the output must conform to a rigid structural template.
+    \item \textbf{GPT-2 (Base):} A decoder-only autoregressive model with 124 million parameters. This serves as a baseline to evaluate how unidirectional context handles the causal relationship between fault descriptions and resolutions.
+\end{itemize}
 
-\subsubsection{Model Training and Hyperparameters}
-The T5 and GPT-2 models were fine-tuned on the Training set. Key hyperparameters included setting the Max Input/Output Sequence Length to \textbf{512 tokens}. Training was performed for up to 10 epochs using the AdamW optimizer with \textbf{early stopping} based on validation loss to prevent overfitting.
+\subsubsection{Retrieval-Augmented Generation (RAG) Architecture}
+The RAG framework was implemented to ground the model’s outputs in historical context, mitigating the risk of neural hallucinations in technical diagnostics. 
+
+
+
+\begin{itemize}
+    \item \textbf{Dense Passage Retrieval (DPR):} We utilized the \texttt{facebook/dpr-question\_encoder-single-nq-base} to encode fault reports into dense 768-dimensional vectors. 
+    \item \textbf{Retrieval Logic:} For a given query report $q$, the system calculates the cosine similarity against a pre-computed corpus tensor of historical resolutions. The retriever identifies the top $k=5$ most relevant contexts, which are then concatenated with the input prompt to provide the generative component with domain-specific grounding.
+\end{itemize}
+
+\subsubsection{Training Protocols and Hyperparameters}
+The SFT models were fine-tuned for 10 epochs using the AdamW optimizer with a weight decay of 0.01. To ensure a fair comparison, we standardized the following hyperparameters:
+\begin{itemize}
+    \item \textbf{Learning Rate:} $5 \times 10^{-5}$ with a linear warmup.
+    \item \textbf{Sequence Length:} Max input and output length set to 512 tokens, utilizing truncation for long technical logs.
+    \item \textbf{Hardware:} Training was executed on a single NVIDIA GPU (16 GB VRAM) with 30 GB of system RAM.
+    \item \textbf{Regularization:} Early stopping was triggered if the validation loss failed to improve for three consecutive epochs to prevent overfitting to customer-specific patterns.
+\end{itemize}
+% \subsection{Model Architectures and Setup}
+% \label{sec:model-arch}
+
+% Three distinct LLM architectures were selected to represent different paradigms in text generation relevant to RCA.
+
+% \begin{table}[ht]
+% \centering\small
+% \caption{\textbf{Summary of Model Architectures}}
+% \label{tab:models-summary}
+% % The column widths are adjusted:
+% % Column 1: Fixed 15% width (p{0.15\columnwidth})
+% % Column 2: Fixed 25% width (p{0.25\columnwidth})
+% % Column 3: The rest (X), now ~60%
+% \begin{tabularx}{\columnwidth}{
+%     >{\bfseries}p{0.15\columnwidth} 
+%     >{\raggedright}p{0.25\columnwidth} 
+%     >{\raggedright\arraybackslash}X 
+% }
+%     \toprule
+%     \textbf{Model} & \textbf{Type} & \textbf{Rationale for RCA} \\
+% \midrule
+% \textbf{T5 (Base)} & Encoder-Decoder (Seq2Seq) & Unified \textbf{Text-to-Text} transformation for structured output. \\
+% \\
+% \textbf{GPT-2 (Medium)} & Autoregressive Decoder & Evaluates flexible, \textbf{free-form generative} capabilities. \\
+% \\
+% \textbf{RAG} & Retrieval-Augmented & Evaluates benefit of \textbf{external grounding} via historical context. \\
+% \bottomrule
+% \end{tabularx}
+% \end{table}
+% \subsubsection{Training Environment}
+% Experiments were executed in a containerized \textbf{Kubeflow environment} using Python, the Hugging Face Transformers library, and PyTorch. The hardware setup included 1 GPU (16 GB memory) and $\sim$30 GB RAM.
+
+% \subsubsection{Model Training and Hyperparameters}
+% The T5 and GPT-2 models were fine-tuned on the Training set. Key hyperparameters included setting the Max Input/Output Sequence Length to \textbf{512 tokens}. Training was performed for up to 10 epochs using the AdamW optimizer with \textbf{early stopping} based on validation loss to prevent overfitting.
 
 \subsection{Evaluation Metrics and Procedure}
 \label{sec:evaluation}
@@ -230,7 +260,7 @@ The performance of the RAG model is evaluated primarily through its end-to-end o
 
 The models were evaluated by comparing their generated RCA explanations against the expert-written ground truth using lexical overlap metrics ($\text{BLEU}$, $\text{ROUGE}$) and semantic similarity ($\text{BERTScore}$). The results are summarized in Table \ref{tab:model_comparison}.
 \begin{table}[h]
-\centering
+\raggedright
 \footnotesize
 \caption{Model Performance Comparison on RCA Generation}
 \label{tab:model_comparison}
@@ -261,6 +291,20 @@ The evaluation demonstrates a distinct trade-off in architectural performance fo
     \item \textbf{RAG excels in semantic relevance and reasoning,} achieving the highest $\text{BERTScore}$ which is critical for providing deep, contextually-grounded insights valuable to a human engineer.
 \end{itemize}
 These results provide the quantitative basis for guiding the selection of LLM architectures in practical engineering workflows.
+
+\section{Threats to Validity}
+\label{sec:threats}
+
+While our findings provide a benchmark for LLM-based RCA, several factors may influence the generalizability and robustness of the results.
+
+\subsection{Internal Validity}
+Internal threats relate to the quality of the ground truth and model training. The expert-written resolutions in the Jira dataset occasionally exhibit varying levels of detail, which introduces noise into the training signal. Furthermore, while the T5 and GPT-2 models were fine-tuned until loss convergence, the stochastic nature of neural generation implies that different random seeds or hyperparameter configurations could yield marginal variations in lexical scores. We mitigated this by utilizing standardized protocols and early stopping.
+
+\subsection{External Validity}
+External threats concern the generalizability of our findings. This study was conducted using a dataset specific to a single industrial domain (telecommunications). Consequently, the performance of the DPR-based RAG and the fine-tuned T5 model may vary when applied to software systems with different logging formats or resolution styles. However, the architectural trade-offs identified (lexical vs. semantic priority) are likely consistent across diverse industrial RCA tasks.
+
+\subsection{Construct Validity}
+Construct threats involve the suitability of our evaluation metrics. We utilized BLEU and ROUGE to measure lexical overlap; however, these metrics do not always correlate with human-perceived utility in a diagnostic context. While we addressed this by incorporating BERTScore to measure semantic similarity, a remaining threat is the absence of a qualitative human-in-the-loop study. Future work will include expert-led evaluations to bridge the gap between automated metrics and real-world engineering value.
 
 \section{CONCLUSION AND FUTURE WORK}
 \label{sec:conclusion}

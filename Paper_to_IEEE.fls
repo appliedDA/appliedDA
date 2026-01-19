@@ -311,6 +311,8 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/vf/adobe/times/ptmri7t.vf
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/vf/adobe/courier/pcrr7t.vf
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/courier/pcrr8r.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/vf/adobe/times/zptmcm7t.vf
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT ./image/t5-small-training.png
 INPUT ./image/t5-small-training.png
 INPUT ./image/t5-small-training.png
@@ -321,6 +323,15 @@ INPUT ./image/gpt2-training-validation-loss.png
 INPUT ./image/gpt2-training-validation-loss.png
 INPUT ./image/gpt2-training-validation-loss.png
 INPUT ./image/gpt2-training-validation-loss.png
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/times/zptmcm7t.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/times/zptmcm7m.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/times/zptmcm7y.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/times/zptmcm7v.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
 INPUT Paper_to_IEEE.aux
 INPUT Paper_to_IEEE.run.xml
