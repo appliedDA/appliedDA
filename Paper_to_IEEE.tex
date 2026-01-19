@@ -89,8 +89,9 @@ Other approaches leverage deep learning architectures such as convolutional neur
 More promising results are seen in graph-based models. KGroot \cite{kgroot2024}, a recent framework combining knowledge graphs with graph convolutional networks (GCNs), constructs semantic fault graphs from event traces and textual logs. It enables similarity-based retrieval of past faults with known causes, providing contextual and semantic guidance. This makes it particularly well-suited for cases where fault descriptions, priorities, and summaries are available.
 
 Another technique involves combining LSTM networks with Bayesian neural networks (BNNs) to model probabilistic causality across time-series data \cite{lstm2023bnn}. Though effective in capturing causal structures, it relies entirely on structured logs and does not process natural language input.
-\subsubsection*{Summary of Related Word}
+\subsubsection*{Summary of Related Work}
 Traditional machine learning and deep learning methods have laid the foundation for automated root cause analysis, especially in classification and clustering tasks. However, these approaches often fall short in dealing with unstructured, domain-specific text where lexical and semantic nuance is crucial. Recent work using graph-based or retrieval-augmented models has improved case similarity detection, yet lacks generalization across diverse linguistic expressions. This opens the door for large language models (LLMs), which inherently support contextual understanding, semantic retrieval, and natural language generation. As such, this thesis explores whether LLMs—specifically T5, GPT-2, and RAG—can serve not as replacements but as intelligent assistants to engineers performing RCA, addressing both relevance and clarity in fault resolution.
+
 \section{METHODOLOGY}
 \label{sec:methodology}
 
@@ -230,16 +231,16 @@ The performance of the RAG model is evaluated primarily through its end-to-end o
 The models were evaluated by comparing their generated RCA explanations against the expert-written ground truth using lexical overlap metrics ($\text{BLEU}$, $\text{ROUGE}$) and semantic similarity ($\text{BERTScore}$). The results are summarized in Table \ref{tab:model_comparison}.
 \begin{table}[h]
 \centering
-\small
+\footnotesize
 \caption{Model Performance Comparison on RCA Generation}
 \label{tab:model_comparison}
 \begin{tabularx}{\columnwidth}{>{\bfseries}X c c c c c}
 \toprule
-Model  & BLEU-4 & ROUGE-1 & ROUGE-L & ROUGE-2 & BERT Score \\
+Model  & BLEU & R-1 & R-L & R-2 & BERT \\
 \midrule
-T5 & \textbf{0.1810} & \textbf{0.3869} & \textbf{0.3463} & \textbf{0.2821} & 0.5478 \\
-GPT-2 & 0.1210 & 0.1885 & 0.1001 & 0.0432 & 0.4674 \\
-RAG & 0.0037 & 0.0682 & 0.0447 & 0.0072 & \textbf{0.7715} \\
+T5 & \textbf{0.181} & \textbf{0.387} & \textbf{0.346} & \textbf{0.282} & 0.548 \\
+GPT-2 & 0.121 & 0.189 & 0.100 & 0.043 & 0.467 \\
+RAG & 0.004 & 0.068 & 0.045 & 0.007 & \textbf{0.772} \\
 \bottomrule
 \end{tabularx}
 \end{table}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.4)  18 JAN 2026 17:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.4)  18 JAN 2026 17:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -719,99 +719,99 @@ Underfull \hbox (badness 2035) in paragraph at lines 85--86
 
 [2]
 
-Package caption Warning: \label without proper reference on input line 123.
+Package caption Warning: \label without proper reference on input line 124.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `tab:answer-structure' on page 3 undefined on input line 118.
+LaTeX Warning: Reference `tab:answer-structure' on page 3 undefined on input line 119.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--174
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
 []|\OT1/ptm/b/n/9 GPT-2
  []
 
 
-Overfull \hbox (1.85776pt too wide) in paragraph at lines 174--174
+Overfull \hbox (1.85776pt too wide) in paragraph at lines 175--175
 \OT1/ptm/b/n/9 (Medium)| 
  []
 
 
 
 
-Underfull \hbox (badness 1622) in paragraph at lines 198--199
+Underfull \hbox (badness 1622) in paragraph at lines 199--200
 \OT1/ptm/m/n/10 three model ar-chi-tec-tures: \OT1/ptm/b/n/10 T5\OT1/ptm/m/n/10 , \OT1/ptm/b/n/10 GPT-2\OT1/ptm/m/n/10 , and \OT1/ptm/b/n/10 Retrieval-
  []
 
 <image/t5-small-training.png, id=15, 714.7503pt x 426.393pt>
 File: image/t5-small-training.png Graphic file (type png)
 <use image/t5-small-training.png>
-Package pdftex.def Info: image/t5-small-training.png  used on input line 214.
+Package pdftex.def Info: image/t5-small-training.png  used on input line 215.
 (pdftex.def)             Requested size: 240.23016pt x 143.3126pt.
 <image/gpt2-training-validation-loss.png, id=17, 714.7503pt x 426.393pt>
 File: image/gpt2-training-validation-loss.png Graphic file (type png)
 <use image/gpt2-training-validation-loss.png>
-Package pdftex.def Info: image/gpt2-training-validation-loss.png  used on input line 220.
+Package pdftex.def Info: image/gpt2-training-validation-loss.png  used on input line 221.
 (pdftex.def)             Requested size: 240.23016pt x 143.3126pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Package tabularx Warning: X Columns too narrow (table too wide)
-(tabularx)                 on input line 244.
+(tabularx)                 on input line 245.
 
 
-Overfull \hbox (15.49773pt too wide) in paragraph at lines 244--244
+Overfull \hbox (15.49773pt too wide) in paragraph at lines 245--245
 []|\OT1/ptm/b/n/9 Model| 
  []
 
 
-Overfull \hbox (1.50293pt too wide) in paragraph at lines 244--244
+Overfull \hbox (1.50293pt too wide) in paragraph at lines 245--245
 []|\OT1/ptm/b/n/9 T5| 
  []
 
 
-Overfull \hbox (11.67284pt too wide) in paragraph at lines 244--244
+Overfull \hbox (11.67284pt too wide) in paragraph at lines 245--245
 []|\OT1/ptm/b/n/9 GPT-
  []
 
 
-Overfull \hbox (10.50291pt too wide) in paragraph at lines 244--244
+Overfull \hbox (10.50291pt too wide) in paragraph at lines 245--245
 []|\OT1/ptm/b/n/9 RAG| 
  []
 
 
-Overfull \hbox (29.25812pt too wide) in alignment at lines 244--244
+Overfull \hbox (29.25812pt too wide) in alignment at lines 245--245
 [][][][][][] 
  []
 
 
 
 [3]
-Underfull \hbox (badness 2809) in paragraph at lines 248--249
+Underfull \hbox (badness 2809) in paragraph at lines 249--250
  \OT1/ptm/m/it/10 1) Lex-i-cal and Struc-tural Fi-delity: [][] \OT1/ptm/m/n/10 The \OT1/ptm/b/n/10 T5 \OT1/ptm/m/n/10 model
  []
 
 
-Underfull \hbox (badness 1803) in paragraph at lines 248--249
+Underfull \hbox (badness 1803) in paragraph at lines 249--250
 \OT1/ptm/m/n/10 achieved the high-est scores across all lex-i-cal met-rics
  []
 
 
 
 
-Underfull \hbox (badness 5260) in paragraph at lines 272--273
+Underfull \hbox (badness 5260) in paragraph at lines 273--274
 []\OT1/ptm/b/n/10 Architectural Per-for-mance: \OT1/ptm/m/n/10 Fine-tuning domain-
  []
 
 
 
 [4 <./image/t5-small-training.png> <./image/gpt2-training-validation-loss.png>]
-Underfull \hbox (badness 6445) in paragraph at lines 274--275
+Underfull \hbox (badness 6445) in paragraph at lines 275--276
 []\OT1/ptm/b/n/10 Selection Frame-work: \OT1/ptm/m/n/10 We in-tro-duced a three-
  []
 
 
-Underfull \hbox (badness 1496) in paragraph at lines 288--289
+Underfull \hbox (badness 1496) in paragraph at lines 289--290
 []\OT1/ptm/b/n/10 Scalability and Gen-er-al-iza-tion: \OT1/ptm/m/n/10 Eval-u-at-ing larger
  []
 
@@ -841,7 +841,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  67i,11n,81p,1458b,1231s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Paper_to_IEEE.pdf (5 pages, 218599 bytes).
+Output written on Paper_to_IEEE.pdf (5 pages, 218590 bytes).
 PDF statistics:
  66 PDF objects out of 1000 (max. 8388607)
  38 compressed objects within 1 object stream
