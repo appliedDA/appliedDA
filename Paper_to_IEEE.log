@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.4)  19 JAN 2026 20:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.4)  19 JAN 2026 20:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -669,35 +669,35 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 36.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 38.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 36.
-LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 36.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 38.
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 38.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 36.
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 38.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 36.
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 38.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 36.
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 38.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8.14006> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 36.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6.60007> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 36.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 50.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 52.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 50.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 52.
 
 
 
@@ -706,7 +706,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 
 
 ]
-Underfull \hbox (badness 2035) in paragraph at lines 86--87
+Underfull \hbox (badness 2035) in paragraph at lines 88--89
 \OT1/ptm/m/n/10 mod-els like Sparse Causal Resid-ual Neu-ral Net-works
  []
 
@@ -717,12 +717,12 @@ Underfull \hbox (badness 2035) in paragraph at lines 86--87
 [2]
 
 
-Overfull \hbox (39.45807pt too wide) in paragraph at lines 166--167
+Overfull \hbox (39.45807pt too wide) in paragraph at lines 168--169
 \OT1/pcr/m/n/10 facebook/dpr-question_encoder-single-nq-base
  []
 
 
-Underfull \hbox (badness 1622) in paragraph at lines 229--230
+Underfull \hbox (badness 1622) in paragraph at lines 231--232
 \OT1/ptm/m/n/10 three model ar-chi-tec-tures: \OT1/ptm/b/n/10 T5\OT1/ptm/m/n/10 , \OT1/ptm/b/n/10 GPT-2\OT1/ptm/m/n/10 , and \OT1/ptm/b/n/10 Retrieval-
  []
 
@@ -732,45 +732,41 @@ Underfull \hbox (badness 1622) in paragraph at lines 229--230
 <image/t5-small-training.png, id=19, 714.7503pt x 426.393pt>
 File: image/t5-small-training.png Graphic file (type png)
 <use image/t5-small-training.png>
-Package pdftex.def Info: image/t5-small-training.png  used on input line 245.
+Package pdftex.def Info: image/t5-small-training.png  used on input line 247.
 (pdftex.def)             Requested size: 240.23016pt x 143.3126pt.
 <image/gpt2-training-validation-loss.png, id=21, 714.7503pt x 426.393pt>
 File: image/gpt2-training-validation-loss.png Graphic file (type png)
 <use image/gpt2-training-validation-loss.png>
-Package pdftex.def Info: image/gpt2-training-validation-loss.png  used on input line 251.
+Package pdftex.def Info: image/gpt2-training-validation-loss.png  used on input line 253.
 (pdftex.def)             Requested size: 240.23016pt x 143.3126pt.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Underfull \hbox (badness 2809) in paragraph at lines 279--280
+Underfull \hbox (badness 2809) in paragraph at lines 281--282
  \OT1/ptm/m/it/10 1) Lex-i-cal and Struc-tural Fi-delity: [][] \OT1/ptm/m/n/10 The \OT1/ptm/b/n/10 T5 \OT1/ptm/m/n/10 model
  []
 
 
-Underfull \hbox (badness 1803) in paragraph at lines 279--280
+Underfull \hbox (badness 1803) in paragraph at lines 281--282
 \OT1/ptm/m/n/10 achieved the high-est scores across all lex-i-cal met-rics
  []
 
 
 
-
-
 [4 <./image/t5-small-training.png> <./image/gpt2-training-validation-loss.png>]
-Underfull \hbox (badness 5260) in paragraph at lines 317--318
+Underfull \hbox (badness 5260) in paragraph at lines 319--320
 []\OT1/ptm/b/n/10 Architectural Per-for-mance: \OT1/ptm/m/n/10 Fine-tuning domain-
  []
 
 
 
 
-Underfull \hbox (badness 6445) in paragraph at lines 319--320
+Underfull \hbox (badness 6445) in paragraph at lines 321--322
 []\OT1/ptm/b/n/10 Selection Frame-work: \OT1/ptm/m/n/10 We in-tro-duced a three-
  []
 
 
-Underfull \hbox (badness 1496) in paragraph at lines 333--334
+Underfull \hbox (badness 1496) in paragraph at lines 335--336
 []\OT1/ptm/b/n/10 Scalability and Gen-er-al-iza-tion: \OT1/ptm/m/n/10 Eval-u-at-ing larger
  []
 
@@ -792,15 +788,15 @@ Package logreq Info: Writing requests to 'Paper_to_IEEE.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 14102 strings out of 473190
- 263464 string characters out of 5715800
+ 14103 strings out of 473190
+ 263472 string characters out of 5715800
  1089355 words of memory out of 5000000
- 37192 multiletter control sequences out of 15000+600000
+ 37193 multiletter control sequences out of 15000+600000
  625306 words of font info for 177 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  67i,11n,81p,1458b,1231s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Paper_to_IEEE.pdf (6 pages, 222876 bytes).
+Output written on Paper_to_IEEE.pdf (6 pages, 222550 bytes).
 PDF statistics:
  69 PDF objects out of 1000 (max. 8388607)
  40 compressed objects within 1 object stream
