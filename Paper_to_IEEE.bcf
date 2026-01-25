@@ -2376,15 +2376,15 @@
     <bcf:citekey order="1" intorder="1">10979844</bcf:citekey>
     <bcf:citekey order="2" intorder="1">10684586</bcf:citekey>
     <bcf:citekey order="3" intorder="1">chen2024automatic</bcf:citekey>
-    <bcf:citekey order="3" intorder="2">10765066</bcf:citekey>
-    <bcf:citekey order="4" intorder="1">wang2021rootcause</bcf:citekey>
-    <bcf:citekey order="5" intorder="1">chen2017pca</bcf:citekey>
-    <bcf:citekey order="6" intorder="1">zhang2022sdn</bcf:citekey>
-    <bcf:citekey order="7" intorder="1">jovic2023naivebayes</bcf:citekey>
-    <bcf:citekey order="8" intorder="1">chen2022scrnn</bcf:citekey>
-    <bcf:citekey order="9" intorder="1">anomaly2021dl</bcf:citekey>
-    <bcf:citekey order="10" intorder="1">kgroot2024</bcf:citekey>
-    <bcf:citekey order="11" intorder="1">lstm2023bnn</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">10765066</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">wang2021rootcause</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">chen2017pca</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">zhang2022sdn</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">jovic2023naivebayes</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">chen2022scrnn</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">anomaly2021dl</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">kgroot2024</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">lstm2023bnn</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

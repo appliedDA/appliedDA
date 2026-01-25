@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.4)  19 JAN 2026 20:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.4)  25 JAN 2026 12:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -615,15 +615,15 @@ LaTeX Font Info:    ... okay on input line 19.
 * \textheight=681.15898pt
 * \oddsidemargin=-15.36449pt
 * \evensidemargin=-15.36449pt
-* \topmargin=-54.23775pt
+* \topmargin=-48.70648pt
 * \headheight=12.0pt
-* \headsep=26.87326pt
+* \headsep=21.342pt
 * \topskip=12.0pt
-* \footskip=38.27646pt
+* \footskip=25.80774pt
 * \marginparwidth=20.0pt
 * \marginparsep=10.0pt
 * \columnsep=12.0pt
-* \skip\footins=16.19989pt plus 7.19989pt minus 3.59995pt
+* \skip\footins=10.79993pt plus 4.79993pt minus 2.39996pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -694,11 +694,21 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8.14006> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6.60007> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 52.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 52.
 
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 56.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 56.
+
+Underfull \hbox (badness 2158) in paragraph at lines 56--57
+\OT1/ptm/m/n/10 Fine-Tuning T5 and GPT-2 mod-els us-ing lex-i-cal
+ []
+
+
+Underfull \hbox (badness 2293) in paragraph at lines 70--71
+[]\OT1/ptm/m/n/10 RQ2: How do su-per-vised Fine-Tuning (SFT) ar-
+ []
 
 
 
@@ -717,68 +727,61 @@ Underfull \hbox (badness 2035) in paragraph at lines 88--89
 [2]
 
 
-Overfull \hbox (39.45807pt too wide) in paragraph at lines 168--169
-\OT1/pcr/m/n/10 facebook/dpr-question_encoder-single-nq-base
- []
-
-
-Underfull \hbox (badness 1622) in paragraph at lines 231--232
-\OT1/ptm/m/n/10 three model ar-chi-tec-tures: \OT1/ptm/b/n/10 T5\OT1/ptm/m/n/10 , \OT1/ptm/b/n/10 GPT-2\OT1/ptm/m/n/10 , and \OT1/ptm/b/n/10 Retrieval-
- []
-
-
 
 [3]
 <image/t5-small-training.png, id=19, 714.7503pt x 426.393pt>
 File: image/t5-small-training.png Graphic file (type png)
 <use image/t5-small-training.png>
-Package pdftex.def Info: image/t5-small-training.png  used on input line 247.
+Package pdftex.def Info: image/t5-small-training.png  used on input line 248.
 (pdftex.def)             Requested size: 240.23016pt x 143.3126pt.
 <image/gpt2-training-validation-loss.png, id=21, 714.7503pt x 426.393pt>
 File: image/gpt2-training-validation-loss.png Graphic file (type png)
 <use image/gpt2-training-validation-loss.png>
-Package pdftex.def Info: image/gpt2-training-validation-loss.png  used on input line 253.
+Package pdftex.def Info: image/gpt2-training-validation-loss.png  used on input line 255.
 (pdftex.def)             Requested size: 240.23016pt x 143.3126pt.
 
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-Underfull \hbox (badness 2809) in paragraph at lines 281--282
- \OT1/ptm/m/it/10 1) Lex-i-cal and Struc-tural Fi-delity: [][] \OT1/ptm/m/n/10 The \OT1/ptm/b/n/10 T5 \OT1/ptm/m/n/10 model
+
+Underfull \hbox (badness 2990) in paragraph at lines 284--285
+ \OT1/ptm/m/it/10 1) Lex-i-cal and Struc-tural Fi-delity: [][] \OT1/ptm/m/n/10 The T5 model
  []
 
 
-Underfull \hbox (badness 1803) in paragraph at lines 281--282
-\OT1/ptm/m/n/10 achieved the high-est scores across all lex-i-cal met-rics
+Underfull \hbox (badness 2012) in paragraph at lines 287--288
+\OT1/ptm/m/n/10 high-est se-man-tic sim-i-lar-ity score (BERTScore=0.7715).
  []
+
+
 
 
 
 [4 <./image/t5-small-training.png> <./image/gpt2-training-validation-loss.png>]
-Underfull \hbox (badness 5260) in paragraph at lines 319--320
-[]\OT1/ptm/b/n/10 Architectural Per-for-mance: \OT1/ptm/m/n/10 Fine-tuning domain-
+<image/RAG-T5.png, id=27, 1541.76pt x 1027.84pt>
+File: image/RAG-T5.png Graphic file (type png)
+<use image/RAG-T5.png>
+Package pdftex.def Info: image/RAG-T5.png  used on input line 301.
+(pdftex.def)             Requested size: 275.26772pt x 183.49759pt.
+
+Overfull \hbox (2.57298pt too wide) in paragraph at lines 300--302
+ []| [] 
  []
 
 
 
 
-Underfull \hbox (badness 6445) in paragraph at lines 321--322
-[]\OT1/ptm/b/n/10 Selection Frame-work: \OT1/ptm/m/n/10 We in-tro-duced a three-
- []
-
-
-Underfull \hbox (badness 1496) in paragraph at lines 335--336
-[]\OT1/ptm/b/n/10 Scalability and Gen-er-al-iza-tion: \OT1/ptm/m/n/10 Eval-u-at-ing larger
+Underfull \hbox (badness 10000) in paragraph at lines 346--347
+[]\OT1/ptm/m/n/10 Selection Frame-work: We in-tro-duced a three-
  []
 
 
 
-[5]
+[5 <./image/RAG-T5.png (PNG copy)>]
 
 
 
-[6
-
-] (./Paper_to_IEEE.aux)
+[6] (./Paper_to_IEEE.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -788,18 +791,18 @@ Package logreq Info: Writing requests to 'Paper_to_IEEE.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 14103 strings out of 473190
- 263472 string characters out of 5715800
- 1089355 words of memory out of 5000000
- 37193 multiletter control sequences out of 15000+600000
- 625306 words of font info for 177 fonts, out of 8000000 for 9000
+ 14107 strings out of 473190
+ 263629 string characters out of 5715800
+ 1089267 words of memory out of 5000000
+ 37200 multiletter control sequences out of 15000+600000
+ 622763 words of font info for 172 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 67i,11n,81p,1458b,1231s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Paper_to_IEEE.pdf (6 pages, 222550 bytes).
+ 67i,11n,81p,1450b,1240s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Paper_to_IEEE.pdf (6 pages, 1405480 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
- 40 compressed objects within 1 object stream
+ 65 PDF objects out of 1000 (max. 8388607)
+ 37 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

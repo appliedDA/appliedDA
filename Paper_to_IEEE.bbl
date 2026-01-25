@@ -188,6 +188,15 @@
       \field{year}{2024}
       \field{pages}{674\bibrangedash 688}
       \range{pages}{15}
+      \verb{doi}
+      \verb 10.1145/3627703.3629553
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/3627703.3629553
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/3627703.3629553
+      \endverb
     \endentry
     \entry{10765066}{inproceedings}{}{}
       \name{author}{6}{}{%
@@ -230,8 +239,8 @@
       \strng{authornamehash}{d9b3e5c8c69d258597b391c9f6373b3c}
       \strng{authorfullhash}{2e72338088f9e20702d6725dafcc5d96}
       \strng{authorfullhashraw}{2e72338088f9e20702d6725dafcc5d96}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2024 39th IEEE/ACM International Conference on Automated Software Engineering (ASE)}
@@ -259,8 +268,8 @@
       \strng{authornamehash}{a173ffd7d2f7a3e749ffa08afcdc6031}
       \strng{authorfullhash}{a173ffd7d2f7a3e749ffa08afcdc6031}
       \strng{authorfullhashraw}{a173ffd7d2f7a3e749ffa08afcdc6031}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:2103.02372}
@@ -286,8 +295,8 @@
       \strng{authorfullhash}{52c9d9676745ece155d3f3f01e225c43}
       \strng{authorfullhashraw}{52c9d9676745ece155d3f3f01e225c43}
       \field{extraname}{2}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Intelligent Manufacturing}
@@ -312,8 +321,8 @@
       \strng{authornamehash}{a7bdfe934c877ee9b78d04fed4e61189}
       \strng{authorfullhash}{a7bdfe934c877ee9b78d04fed4e61189}
       \strng{authorfullhashraw}{a7bdfe934c877ee9b78d04fed4e61189}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of IEEE ICNC}
@@ -338,8 +347,8 @@
       \strng{authornamehash}{b23082020b82da70553d999364be67b6}
       \strng{authorfullhash}{b23082020b82da70553d999364be67b6}
       \strng{authorfullhashraw}{b23082020b82da70553d999364be67b6}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Automatic Control and Computer Sciences}
@@ -365,8 +374,8 @@
       \strng{authorfullhash}{52c9d9676745ece155d3f3f01e225c43}
       \strng{authorfullhashraw}{52c9d9676745ece155d3f3f01e225c43}
       \field{extraname}{3}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Frontiers in Manufacturing Technology}
@@ -391,8 +400,8 @@
       \strng{authornamehash}{e86bfb05d7d69ee93096586b3570ad1c}
       \strng{authorfullhash}{e86bfb05d7d69ee93096586b3570ad1c}
       \strng{authorfullhashraw}{e86bfb05d7d69ee93096586b3570ad1c}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:2101.07802}

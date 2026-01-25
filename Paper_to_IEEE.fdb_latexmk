@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber Paper_to_IEEE"] 1768643148.43549 "Paper_to_IEEE.bcf" "Paper_to_IEEE.bbl" "Paper_to_IEEE" 1768852377.16102 0
-  "Paper_to_IEEE.bcf" 1768852377.12125 108550 1122a405b4f7a8f2ff30fbc6bcd880cd "pdflatex"
-  "references.bib" 1764447658.24216 16040 41b99a4f79d93aad433705274b469400 ""
+["biber Paper_to_IEEE"] 1769339191.60572 "Paper_to_IEEE.bcf" "Paper_to_IEEE.bbl" "Paper_to_IEEE" 1769339194.4666 0
+  "Paper_to_IEEE.bcf" 1769339194.42452 108551 ac0f59debeb4ba0389ba31b5aa445deb "pdflatex"
+  "references.bib" 1769339191.45834 16123 ec8d15170f1071059b10b31d28092695 ""
   (generated)
   "Paper_to_IEEE.bbl"
   "Paper_to_IEEE.blg"
   (rewritten before read)
-["pdflatex"] 1768852376.42898 "/Users/shijunfeng/Desktop/Acadmic Paper/Paper_to_IEEE.tex" "Paper_to_IEEE.pdf" "Paper_to_IEEE" 1768852377.16122 0
-  "/Users/shijunfeng/Desktop/Acadmic Paper/Paper_to_IEEE.tex" 1768852376.23081 29619 6e3d71d5c1a9b947e92c13e9d36d5b64 ""
+["pdflatex"] 1769339193.72737 "/Users/shijunfeng/Desktop/Acadmic Paper/Paper_to_IEEE.tex" "Paper_to_IEEE.pdf" "Paper_to_IEEE" 1769339194.4668 0
+  "/Users/shijunfeng/Desktop/Acadmic Paper/Paper_to_IEEE.tex" 1769339188.49127 30858 9ed326e61d6a6dbab1b1b4f7fbbec01b ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1136768653 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -33,7 +33,6 @@
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr10.tfm" 1136768653 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1136768653 1124 6c73e740cf17375f03eec0ee63599741 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm" 1229303445 688 37338d6ab346c2f1466b29e195316aa4 ""
-  "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb" 1136849748 45758 19968a0990191524e34e1994d4a31cb6 ""
@@ -114,10 +113,11 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1759601630 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1759601605 3345725 8a4db0c7d1609aa42ec1a7c335230de6 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "Paper_to_IEEE.aux" 1768852377.12007 7216 69567fd6d4a16bc9e08ade32a3052424 "pdflatex"
-  "Paper_to_IEEE.bbl" 1768643149.98295 20141 f6e6dbe89a448d3e9fdccf8211c4935c "biber Paper_to_IEEE"
-  "Paper_to_IEEE.run.xml" 1768852377.12179 2465 8e9242f23af8d1e282fb55830a12a353 "pdflatex"
-  "Paper_to_IEEE.tex" 1768852376.23081 29619 6e3d71d5c1a9b947e92c13e9d36d5b64 ""
+  "Paper_to_IEEE.aux" 1769339194.42306 7607 59a0510d97ede2c052346eb887bd8337 "pdflatex"
+  "Paper_to_IEEE.bbl" 1769339192.95929 20380 a3b4b2413879de2e8fc662e10d8f638d "biber Paper_to_IEEE"
+  "Paper_to_IEEE.run.xml" 1769339194.42797 2465 8e9242f23af8d1e282fb55830a12a353 "pdflatex"
+  "Paper_to_IEEE.tex" 1769339188.49127 30858 9ed326e61d6a6dbab1b1b4f7fbbec01b ""
+  "image/RAG-T5.png" 1769334289.91841 1252336 462166dad6359cae89f7998c1ba137a0 ""
   "image/gpt2-training-validation-loss.png" 1765309386.81568 65303 78a923cbb9370512e5722a70c33c354b ""
   "image/t5-small-training.png" 1765309368.43016 64390 0f20c270a5e0f3610143fa4b91c0f06c ""
   (generated)
