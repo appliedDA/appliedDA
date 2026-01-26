@@ -1,0 +1,479 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{10979844}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=7a589cb235ccad647e15a4e4233eea95}{%
+           family={Pedroso},
+           familyi={P\bibinitperiod},
+           given={Diego\bibnamedelima Frazatto},
+           giveni={D\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=4e08ad0f12fcc1bd60ddd68c08f76504}{%
+           family={Almeida},
+           familyi={A\bibinitperiod},
+           given={Luís},
+           giveni={L\bibinitperiod}}}%
+        {{hash=4ad1378b7c7712a0ea80b8cf26ac29fe}{%
+           family={Pulcinelli},
+           familyi={P\bibinitperiod},
+           given={Lucas\bibnamedelimb Eduardo\bibnamedelima Gulka},
+           giveni={L\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=2edeefaabaf16f57a7fd93eb9bdf9cca}{%
+           family={Aisawa},
+           familyi={A\bibinitperiod},
+           given={William\bibnamedelimb Akihiro\bibnamedelima Alves},
+           giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=dfd45f5b693c135bcb7431f928972c64}{%
+           family={Dutra},
+           familyi={D\bibinitperiod},
+           given={Inês},
+           giveni={I\bibinitperiod}}}%
+        {{hash=c02b1f6443f5050ac390e3fb94db5fe8}{%
+           family={Bruschi},
+           familyi={B\bibinitperiod},
+           given={Sarita\bibnamedelima Mazzini},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{730354f44a2df7c19a88c29eeceb869d}
+      \strng{fullhash}{aa1046e9c5866e890d8e995bf7d6c845}
+      \strng{fullhashraw}{aa1046e9c5866e890d8e995bf7d6c845}
+      \strng{bibnamehash}{aa1046e9c5866e890d8e995bf7d6c845}
+      \strng{authorbibnamehash}{aa1046e9c5866e890d8e995bf7d6c845}
+      \strng{authornamehash}{730354f44a2df7c19a88c29eeceb869d}
+      \strng{authorfullhash}{aa1046e9c5866e890d8e995bf7d6c845}
+      \strng{authorfullhashraw}{aa1046e9c5866e890d8e995bf7d6c845}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Access}
+      \field{title}{Anomaly Detection and Root Cause Analysis in Cloud-Native Environments Using Large Language Models and Bayesian Networks}
+      \field{volume}{13}
+      \field{year}{2025}
+      \field{pages}{77550\bibrangedash 77564}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1109/ACCESS.2025.3565220
+      \endverb
+      \keyw{Anomaly detection;Cloud computing;Monitoring;Microservice architectures;Large language models;Ecosystems;Computer architecture;Bayes methods;Scalability;Load modeling;Automated root cause analysis;Bayesian networks;LLM;cloud computing}
+    \endentry
+    \entry{10684586}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=085e50cf837aa8b646557185eac23501}{%
+           family={Afshinpour},
+           familyi={A\bibinitperiod},
+           given={Bahareh},
+           giveni={B\bibinitperiod}}}%
+        {{hash=e92378083f8ca263e2ad9268274f0c1b}{%
+           family={Amini},
+           familyi={A\bibinitperiod},
+           given={Massih-Reza},
+           giveni={M\bibinithyphendelim R\bibinitperiod}}}%
+        {{hash=46eee74b1178ccb0f72f06c4e2cb9b1e}{%
+           family={Groz},
+           familyi={G\bibinitperiod},
+           given={Roland},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{7a8361dfd2e712c7b08497bfabc8b5a0}
+      \strng{fullhash}{7472275cefffd87e88fa752f259d537f}
+      \strng{fullhashraw}{7472275cefffd87e88fa752f259d537f}
+      \strng{bibnamehash}{7472275cefffd87e88fa752f259d537f}
+      \strng{authorbibnamehash}{7472275cefffd87e88fa752f259d537f}
+      \strng{authornamehash}{7a8361dfd2e712c7b08497bfabc8b5a0}
+      \strng{authorfullhash}{7472275cefffd87e88fa752f259d537f}
+      \strng{authorfullhashraw}{7472275cefffd87e88fa752f259d537f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2024 IEEE 24th International Conference on Software Quality, Reliability and Security (QRS)}
+      \field{title}{Semantic Log Partitioning: Towards Automated Root Cause Analysis}
+      \field{year}{2024}
+      \field{pages}{639\bibrangedash 648}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/QRS62785.2024.00069
+      \endverb
+      \keyw{Software testing;Performance evaluation;Root cause analysis;Runtime;Event detection;Semantics;Software quality;Automated software testing;Log analysis;Machine learning;Log mining task;Root-cause events detection}
+    \endentry
+    \entry{chen2024automatic}{inproceedings}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=8a846fa5b852d6ba9cd716cefde5bbf7}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Yinfang},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=2571ac33b2d98fc06a4db77ead0fe90d}{%
+           family={Xie},
+           familyi={X\bibinitperiod},
+           given={Huaibing},
+           giveni={H\bibinitperiod}}}%
+        {{hash=404bd78566bb96e0d7697db50a89acb0}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Minghua},
+           giveni={M\bibinitperiod}}}%
+        {{hash=7520290dca1e66fe5555079bba014bf2}{%
+           family={Kang},
+           familyi={K\bibinitperiod},
+           given={Yu},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=b5ecefa5e74745f1373c15347bb0c72f}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Xin},
+           giveni={X\bibinitperiod}}}%
+        {{hash=73cf36ac80f9cb4570fca01f594173a2}{%
+           family={Shi},
+           familyi={S\bibinitperiod},
+           given={Liu},
+           giveni={L\bibinitperiod}}}%
+        {{hash=c1f35042a014559d6e0c5fde17c81754}{%
+           family={Cao},
+           familyi={C\bibinitperiod},
+           given={Yunjie},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=bff19a1d449a436ed67210378df56ec7}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Xuedong},
+           giveni={X\bibinitperiod}}}%
+        {{hash=7cd75a80763049dc65103e70f07a163c}{%
+           family={Fan},
+           familyi={F\bibinitperiod},
+           given={Hao},
+           giveni={H\bibinitperiod}}}%
+        {{hash=25eac348c54606c27d3a7fa57d9701a6}{%
+           family={Wen},
+           familyi={W\bibinitperiod},
+           given={Ming},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{60569236726859843454bba1469d8bf7}
+      \strng{fullhash}{86255d832e7e22739b7d9e276fe3b693}
+      \strng{fullhashraw}{86255d832e7e22739b7d9e276fe3b693}
+      \strng{bibnamehash}{60569236726859843454bba1469d8bf7}
+      \strng{authorbibnamehash}{60569236726859843454bba1469d8bf7}
+      \strng{authornamehash}{60569236726859843454bba1469d8bf7}
+      \strng{authorfullhash}{86255d832e7e22739b7d9e276fe3b693}
+      \strng{authorfullhashraw}{86255d832e7e22739b7d9e276fe3b693}
+      \field{extraname}{1}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the Nineteenth European Conference on Computer Systems}
+      \field{title}{Automatic root cause analysis via large language models for cloud incidents}
+      \field{year}{2024}
+      \field{pages}{674\bibrangedash 688}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1145/3627703.3629553
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/3627703.3629553
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/3627703.3629553
+      \endverb
+    \endentry
+    \entry{10765066}{inproceedings}{}{}
+      \name{author}{6}{}{%
+        {{hash=6f996f8a9bb87c6b951801de770c3546}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Yongqi},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=da5964d1afc9f67c2d3fe109d637a803}{%
+           family={Du},
+           familyi={D\bibinitperiod},
+           given={Qingfeng},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=07da2ad0d080188097acdb1ce63432a9}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Ying},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=8576c4d1fcd4babf139902a15cb2cdd3}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Jiaqi},
+           giveni={J\bibinitperiod}}}%
+        {{hash=25c180c70ed41636a295e6dc0ee1cba3}{%
+           family={Tian},
+           familyi={T\bibinitperiod},
+           given={Fulong},
+           giveni={F\bibinitperiod}}}%
+        {{hash=1601c4503ced09329cbdff823397ecd1}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Cheng},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{d9b3e5c8c69d258597b391c9f6373b3c}
+      \strng{fullhash}{2e72338088f9e20702d6725dafcc5d96}
+      \strng{fullhashraw}{2e72338088f9e20702d6725dafcc5d96}
+      \strng{bibnamehash}{2e72338088f9e20702d6725dafcc5d96}
+      \strng{authorbibnamehash}{2e72338088f9e20702d6725dafcc5d96}
+      \strng{authornamehash}{d9b3e5c8c69d258597b391c9f6373b3c}
+      \strng{authorfullhash}{2e72338088f9e20702d6725dafcc5d96}
+      \strng{authorfullhashraw}{2e72338088f9e20702d6725dafcc5d96}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2024 39th IEEE/ACM International Conference on Automated Software Engineering (ASE)}
+      \field{title}{The Potential of One-Shot Failure Root Cause Analysis: Collaboration of the Large Language Model and Small Classifier}
+      \field{year}{2024}
+      \field{pages}{931\bibrangedash 943}
+      \range{pages}{13}
+      \keyw{Training;Software testing;Root cause analysis;Cloud computing;Large language models;Collaboration;Software performance;Software reliability;Observability;Software engineering;root cause analysis;cloud-native systems;multimodal data}
+    \endentry
+    \entry{wang2021rootcause}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=61ad10c626e1d641e0b1d7b5f48d3233}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{a173ffd7d2f7a3e749ffa08afcdc6031}
+      \strng{fullhash}{a173ffd7d2f7a3e749ffa08afcdc6031}
+      \strng{fullhashraw}{a173ffd7d2f7a3e749ffa08afcdc6031}
+      \strng{bibnamehash}{a173ffd7d2f7a3e749ffa08afcdc6031}
+      \strng{authorbibnamehash}{a173ffd7d2f7a3e749ffa08afcdc6031}
+      \strng{authornamehash}{a173ffd7d2f7a3e749ffa08afcdc6031}
+      \strng{authorfullhash}{a173ffd7d2f7a3e749ffa08afcdc6031}
+      \strng{authorfullhashraw}{a173ffd7d2f7a3e749ffa08afcdc6031}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2103.02372}
+      \field{title}{Root cause prediction based on bug reports}
+      \field{year}{2021}
+    \endentry
+    \entry{chen2017pca}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=60aeb23a507616b6ae2488ddaab41f0e}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={X.},
+           giveni={X\bibinitperiod}}}%
+      }
+      \strng{namehash}{52c9d9676745ece155d3f3f01e225c43}
+      \strng{fullhash}{52c9d9676745ece155d3f3f01e225c43}
+      \strng{fullhashraw}{52c9d9676745ece155d3f3f01e225c43}
+      \strng{bibnamehash}{52c9d9676745ece155d3f3f01e225c43}
+      \strng{authorbibnamehash}{52c9d9676745ece155d3f3f01e225c43}
+      \strng{authornamehash}{52c9d9676745ece155d3f3f01e225c43}
+      \strng{authorfullhash}{52c9d9676745ece155d3f3f01e225c43}
+      \strng{authorfullhashraw}{52c9d9676745ece155d3f3f01e225c43}
+      \field{extraname}{2}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Intelligent Manufacturing}
+      \field{title}{Big data oriented root cause identification approach based on PCA and SVM for product infant failure}
+      \field{year}{2017}
+    \endentry
+    \entry{zhang2022sdn}{inproceedings}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=32e563370422457790db030ab2c13183}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{a7bdfe934c877ee9b78d04fed4e61189}
+      \strng{fullhash}{a7bdfe934c877ee9b78d04fed4e61189}
+      \strng{fullhashraw}{a7bdfe934c877ee9b78d04fed4e61189}
+      \strng{bibnamehash}{a7bdfe934c877ee9b78d04fed4e61189}
+      \strng{authorbibnamehash}{a7bdfe934c877ee9b78d04fed4e61189}
+      \strng{authornamehash}{a7bdfe934c877ee9b78d04fed4e61189}
+      \strng{authorfullhash}{a7bdfe934c877ee9b78d04fed4e61189}
+      \strng{authorfullhashraw}{a7bdfe934c877ee9b78d04fed4e61189}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of IEEE ICNC}
+      \field{title}{Machine Learning based Root Cause Analysis for SDN Networks}
+      \field{year}{2022}
+    \endentry
+    \entry{jovic2023naivebayes}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=e95688227c4f060548a0e2a6208eacfc}{%
+           family={Jovic},
+           familyi={J\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{b23082020b82da70553d999364be67b6}
+      \strng{fullhash}{b23082020b82da70553d999364be67b6}
+      \strng{fullhashraw}{b23082020b82da70553d999364be67b6}
+      \strng{bibnamehash}{b23082020b82da70553d999364be67b6}
+      \strng{authorbibnamehash}{b23082020b82da70553d999364be67b6}
+      \strng{authornamehash}{b23082020b82da70553d999364be67b6}
+      \strng{authorfullhash}{b23082020b82da70553d999364be67b6}
+      \strng{authorfullhashraw}{b23082020b82da70553d999364be67b6}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Automatic Control and Computer Sciences}
+      \field{title}{Root cause classification using Naïve Bayes on software defect reports}
+      \field{year}{2023}
+    \endentry
+    \entry{chen2022scrnn}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=60aeb23a507616b6ae2488ddaab41f0e}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={X.},
+           giveni={X\bibinitperiod}}}%
+      }
+      \strng{namehash}{52c9d9676745ece155d3f3f01e225c43}
+      \strng{fullhash}{52c9d9676745ece155d3f3f01e225c43}
+      \strng{fullhashraw}{52c9d9676745ece155d3f3f01e225c43}
+      \strng{bibnamehash}{52c9d9676745ece155d3f3f01e225c43}
+      \strng{authorbibnamehash}{52c9d9676745ece155d3f3f01e225c43}
+      \strng{authornamehash}{52c9d9676745ece155d3f3f01e225c43}
+      \strng{authorfullhash}{52c9d9676745ece155d3f3f01e225c43}
+      \strng{authorfullhashraw}{52c9d9676745ece155d3f3f01e225c43}
+      \field{extraname}{3}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Frontiers in Manufacturing Technology}
+      \field{title}{Big Data–Oriented Root Cause Identification Approach Based on PCA and SVM for Product Infant Failure}
+      \field{year}{2022}
+    \endentry
+    \entry{anomaly2021dl}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=535b46081523fc5c5dcfaba2a621d930}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{e86bfb05d7d69ee93096586b3570ad1c}
+      \strng{fullhash}{e86bfb05d7d69ee93096586b3570ad1c}
+      \strng{fullhashraw}{e86bfb05d7d69ee93096586b3570ad1c}
+      \strng{bibnamehash}{e86bfb05d7d69ee93096586b3570ad1c}
+      \strng{authorbibnamehash}{e86bfb05d7d69ee93096586b3570ad1c}
+      \strng{authornamehash}{e86bfb05d7d69ee93096586b3570ad1c}
+      \strng{authorfullhash}{e86bfb05d7d69ee93096586b3570ad1c}
+      \strng{authorfullhashraw}{e86bfb05d7d69ee93096586b3570ad1c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2101.07802}
+      \field{title}{Deep Learning for Automated Anomaly Detection in Root Cause Analysis}
+      \field{year}{2021}
+    \endentry
+    \entry{kgroot2024}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=0d4a8cff3cc7aa7cf7a8e2b46e93005e}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{97aabe3bac22bc2411d4bdbbbebcfa34}
+      \strng{fullhash}{97aabe3bac22bc2411d4bdbbbebcfa34}
+      \strng{fullhashraw}{97aabe3bac22bc2411d4bdbbbebcfa34}
+      \strng{bibnamehash}{97aabe3bac22bc2411d4bdbbbebcfa34}
+      \strng{authorbibnamehash}{97aabe3bac22bc2411d4bdbbbebcfa34}
+      \strng{authornamehash}{97aabe3bac22bc2411d4bdbbbebcfa34}
+      \strng{authorfullhash}{97aabe3bac22bc2411d4bdbbbebcfa34}
+      \strng{authorfullhashraw}{97aabe3bac22bc2411d4bdbbbebcfa34}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Expert Systems with Applications}
+      \field{title}{KGroot: Root Cause Analysis in Microservices Using Knowledge Graphs and Graph Convolutional Networks}
+      \field{volume}{235}
+      \field{year}{2024}
+      \field{pages}{121155}
+      \range{pages}{1}
+    \endentry
+    \entry{lstm2023bnn}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=ef065b28c31984323fd6d3483d29aafd}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {MDPI}%
+      }
+      \strng{namehash}{dc73eb82d413aea5c979b3637814969e}
+      \strng{fullhash}{dc73eb82d413aea5c979b3637814969e}
+      \strng{fullhashraw}{dc73eb82d413aea5c979b3637814969e}
+      \strng{bibnamehash}{dc73eb82d413aea5c979b3637814969e}
+      \strng{authorbibnamehash}{dc73eb82d413aea5c979b3637814969e}
+      \strng{authornamehash}{dc73eb82d413aea5c979b3637814969e}
+      \strng{authorfullhash}{dc73eb82d413aea5c979b3637814969e}
+      \strng{authorfullhashraw}{dc73eb82d413aea5c979b3637814969e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Algorithms}
+      \field{number}{1}
+      \field{title}{Root Cause Analysis Based on LSTM and Bayesian Neural Network for Time Series Fault Data}
+      \field{volume}{18}
+      \field{year}{2023}
+      \field{pages}{11}
+      \range{pages}{1}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
