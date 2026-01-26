@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.4)  25 JAN 2026 12:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.4)  26 JAN 2026 20:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -706,7 +706,7 @@ Underfull \hbox (badness 2158) in paragraph at lines 56--57
  []
 
 
-Underfull \hbox (badness 2293) in paragraph at lines 70--71
+Underfull \hbox (badness 2293) in paragraph at lines 70--72
 []\OT1/ptm/m/n/10 RQ2: How do su-per-vised Fine-Tuning (SFT) ar-
  []
 
@@ -723,6 +723,14 @@ Underfull \hbox (badness 2035) in paragraph at lines 88--89
 
 
 
+Overfull \hbox (3.89462pt too wide) in paragraph at lines 112--121
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
 
 [2]
 
@@ -732,24 +740,24 @@ Underfull \hbox (badness 2035) in paragraph at lines 88--89
 <image/t5-small-training.png, id=19, 714.7503pt x 426.393pt>
 File: image/t5-small-training.png Graphic file (type png)
 <use image/t5-small-training.png>
-Package pdftex.def Info: image/t5-small-training.png  used on input line 248.
+Package pdftex.def Info: image/t5-small-training.png  used on input line 263.
 (pdftex.def)             Requested size: 240.23016pt x 143.3126pt.
 <image/gpt2-training-validation-loss.png, id=21, 714.7503pt x 426.393pt>
 File: image/gpt2-training-validation-loss.png Graphic file (type png)
 <use image/gpt2-training-validation-loss.png>
-Package pdftex.def Info: image/gpt2-training-validation-loss.png  used on input line 255.
+Package pdftex.def Info: image/gpt2-training-validation-loss.png  used on input line 270.
 (pdftex.def)             Requested size: 240.23016pt x 143.3126pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 2990) in paragraph at lines 284--285
+Underfull \hbox (badness 2990) in paragraph at lines 299--300
  \OT1/ptm/m/it/10 1) Lex-i-cal and Struc-tural Fi-delity: [][] \OT1/ptm/m/n/10 The T5 model
  []
 
 
-Underfull \hbox (badness 2012) in paragraph at lines 287--288
+Underfull \hbox (badness 2012) in paragraph at lines 302--303
 \OT1/ptm/m/n/10 high-est se-man-tic sim-i-lar-ity score (BERTScore=0.7715).
  []
 
@@ -761,17 +769,17 @@ Underfull \hbox (badness 2012) in paragraph at lines 287--288
 <image/RAG-T5.png, id=27, 1541.76pt x 1027.84pt>
 File: image/RAG-T5.png Graphic file (type png)
 <use image/RAG-T5.png>
-Package pdftex.def Info: image/RAG-T5.png  used on input line 301.
+Package pdftex.def Info: image/RAG-T5.png  used on input line 316.
 (pdftex.def)             Requested size: 275.26772pt x 183.49759pt.
 
-Overfull \hbox (2.57298pt too wide) in paragraph at lines 300--302
+Overfull \hbox (2.57298pt too wide) in paragraph at lines 315--317
  []| [] 
  []
 
 
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 346--347
+Underfull \hbox (badness 10000) in paragraph at lines 361--362
 []\OT1/ptm/m/n/10 Selection Frame-work: We in-tro-duced a three-
  []
 
@@ -791,15 +799,15 @@ Package logreq Info: Writing requests to 'Paper_to_IEEE.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 14107 strings out of 473190
- 263629 string characters out of 5715800
- 1089267 words of memory out of 5000000
- 37200 multiletter control sequences out of 15000+600000
+ 14110 strings out of 473190
+ 263711 string characters out of 5715800
+ 1090290 words of memory out of 5000000
+ 37203 multiletter control sequences out of 15000+600000
  622763 words of font info for 172 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  67i,11n,81p,1450b,1240s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Paper_to_IEEE.pdf (6 pages, 1405480 bytes).
+Output written on Paper_to_IEEE.pdf (6 pages, 1405756 bytes).
 PDF statistics:
  65 PDF objects out of 1000 (max. 8388607)
  37 compressed objects within 1 object stream

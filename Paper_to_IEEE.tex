@@ -47,7 +47,7 @@ Root Cause Analysis (RCA), Large Language Models (LLM), T5, GPT-2, Retrieval-Aug
 \section{INTRODUCTION}
 \label{sec:introduction}
 
-Modern cloud-native networks generate a high volume of operational trouble reports, making Root Cause Analysis (RCA) a significant maintenance bottleneck. Currently, fault report management is largely manual and experience-driven, leading to delayed response times and redundant work—particularly in identifying duplicate issues across diverse environments Pedroso et al. \cite{10979844}. The lack of automated frameworks increases the risk of inconsistent handling and human error in correlating system behaviors and logs Afshinpour et al. \cite{10684586}.
+Modern cloud-native networks generate a high volume of operational trouble reports, making Root Cause Analysis (RCA) a significant maintenance bottleneck. Currently, fault report management is largely manual and experience-driven, leading to delayed response times and redundant work—particularly in identifying duplicate issues across diverse environments Diego et al. \cite{10979844} focus Anomaly Detection and Bayesian networks, still, each fault report is processed manually. The lack of automated frameworks increases the risk of inconsistent handling and human error in correlating system behaviors and logs Afshinpour et al. \cite{10684586}.
 
 While Large Language Models (LLMs) have shown potential in automating software engineering tasks Chen et al. \cite{chen2024automatic}, Han et al. \cite{10765066}, existing studies often evaluate models in isolation. There is a lack of systematic comparison between architectural paradigms—specifically supervised fine-tuning (SFT) versus retrieval-augmentation—within specialized industrial domains. This study addresses this gap by benchmarking three distinct architectures: a fine-tuned encoder-decoder model (T5), a decoder-only autoregressive model (GPT-2), and a Retrieval-Augmented Generation (RAG) system using a curated dataset of textual fault reports.
 
@@ -68,7 +68,7 @@ To address the challenges of automating software diagnostic reporting, this stud
 \begin{itemize}
     \item RQ1: To what extent can Large Language Models (LLMs) be Fine-Tuning on domain-specific fault report data to generate lexically and semantically accurate RCA explanations?
     \item RQ2: How do supervised Fine-Tuning (SFT) architectures (e.g., T5, GPT-2) compare to Retrieval-Augmented Generation (RAG) paradigms regarding output quality and alignment with engineering workflows?
-    \item RQ3: How do the computational overhead and the requirement for domain-specific grounding influence the choice between SFT and RAG for industrial software maintenance?
+    % \item RQ3: How do the computational overhead and the requirement for domain-specific grounding influence the choice between SFT and RAG for industrial software maintenance?
 \end{itemize}
 
 Consistent with the technical scope of this study, model performance is evaluated exclusively through automated Natural Language Generation (NLG) metrics, specifically BLEU, ROUGE, and BERTScore. While human-centric evaluation (e.g., expert-rated utility) is recognized as a vital component of practical deployment, it remains outside the scope of this baseline quantitative assessment.
@@ -103,7 +103,22 @@ This section details the research methodology, experimental setup, data preparat
 \subsection{Research Approach and Scope}
 \label{sec:research-approach}
 
-The study employs a quantitative, experimental, and comparative methodology rooted in a positivist paradigm. The objective is the objective, measurable, and replicable evaluation of different LLM architectures for RCA tasks. We utilize an experimental design to assess model outputs under controlled conditions using standardized, automated metrics (BLEU, ROUGE, BERTScore).
+The study employs a quantitative, experimental, and comparative methodology rooted in a positivist paradigm. The objective is the objective, measurable, and replicable evaluation of different LLM architectures for RCA tasks. We utilize an experimental design to assess model outputs under controlled conditions using standardized, automated metrics (BLEU, ROUGE, BERTScore see Table \ref{tab:evaluation_metrics}).
+
+\begin{table}[h]
+\centering
+\caption{Text Generation Evaluation Metrics}
+\label{tab:evaluation_metrics}
+\begin{tabular}{lp{6.2cm}}
+\hline
+\textbf{Metric} & \textbf{Description} \\
+\hline
+BLEU & Precision-based n-gram overlap metric emphasizing exact lexical matching between generated and reference text. \\
+ROUGE & Recall-oriented n-gram or sequence overlap metric measuring reference content coverage. \\
+BERTScore & Semantic similarity metric using contextual embeddings to capture meaning beyond exact word overlap. \\
+\hline
+\end{tabular}
+\end{table}
 
 The research is strictly limited to textual input features (Summary, Description, Priority, Answer) and automated evaluation metrics, focusing on establishing a technical baseline for language-based RCA capabilities.
 
